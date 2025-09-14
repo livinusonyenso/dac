@@ -133,8 +133,13 @@ main {
 .gap-10 {
   gap: 10px;
 }
+
 .gap-6 {
   gap: 6px;
+}
+
+.gap-8 {
+  gap: 8px;
 }
 
 .gap-12 {
@@ -206,6 +211,13 @@ main {
   padding-bottom: 16px;
 }
 
+.mt-24 {
+  margin-top: 24px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+
 .mt-80 {
   margin-top: 80px;
 }
@@ -230,6 +242,9 @@ main {
   border: 1px solid var(--color-sky-blue);
 }
 
+.rounded-12 {
+  border-radius: 12px;
+}
 .rounded-16 {
   border-radius: 16px;
 }
@@ -260,6 +275,10 @@ main {
   font-weight: 700 !important;
 }
 
+.font-900 {
+  font-weight: 900 !important;
+}
+
 .fs-8 {
   font-size: 8px;
 }
@@ -271,6 +290,9 @@ main {
   font-size: 14px;
 }
 
+.fs-40 {
+  font-size: 40px !important;
+}
 .fs-48 {
   font-size: 48px !important;
 }
@@ -307,6 +329,9 @@ main {
 .line-height-24 {
   line-height: 24px !important;
 }
+.line-height-32 {
+  line-height: 32px !important;
+}
 
 .line-height-48 {
   line-height: 48px !important;
@@ -331,11 +356,11 @@ main {
 }
 
 .w-60 {
-  width: 60% ;
+  width: 60%;
 }
 
 .w-180 {
-  width: 180px;
+  width: 180px !important;
 }
 
 .max-width-370 {
@@ -365,6 +390,14 @@ main {
   height: 160px;
 }
 
+.h-370 {
+  height: 370px;
+}
+
+.h-470 {
+  height: 470px;
+}
+
 .height-fit-content {
   height: fit-content !important;
 }
@@ -375,6 +408,9 @@ main {
 
 .mh-450 {
   min-height: 450px;
+}
+.max-height-360 {
+  max-height: 360px;
 }
 
 .mw-460 {
@@ -456,6 +492,9 @@ main {
 .display-none-on-desktop {
   display: none;
 }
+.display-none-on-desktop-flex {
+  display: none;
+}
 
 .flex-one {
   flex: 1;
@@ -463,6 +502,14 @@ main {
 
 .object-cover {
   object-fit: cover;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
 }
 
 .color-off-white {
@@ -1319,10 +1366,237 @@ main {
 
 .h-360 {
   min-height: 360px;
+  height: 360px;
 }
 
 .spacer-height {
   height: 80px;
+}
+
+/* BECOME A MEMBER HTML PAGE */
+
+.form-wrapper {
+  margin-bottom: 9px;
+}
+
+.membership-form-wrapper {
+  border-radius: 24px;
+  background: #ebf0f2;
+  padding: 80px 40px;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 2px;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  background-color: white;
+  box-sizing: border-box;
+  line-height: 24px;
+  font-family: var(--font-family-main);
+}
+
+textarea {
+  resize: none;
+}
+
+button.submit-button {
+  width: fit-content;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 12px 28px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 48px;
+  border: 1px solid var(--Primary-Blue, #013453);
+  background: var(--Primary-Blue, #013453);
+}
+
+button.submit-button:hover {
+  background-color: #00344d;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.accordion-container {
+  background-color: #ebf0f2;
+  padding: 40px;
+  border-radius: 24px;
+}
+
+.accordion details {
+  border-bottom: 1px solid #cddfe3;
+  padding: 16px 0;
+}
+
+.accordion details:last-child {
+  border-bottom: none;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--Primary-Blue, #013453);
+  font-family: Barlow;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+details[open] .icon {
+  transform: rotate(180deg);
+}
+
+details p {
+  font-weight: 400;
+  font-size: 15px;
+  color: #2c3e50;
+  margin: 16px 0 0 0;
+  line-height: 1.5;
+}
+
+/* EVENT.HMTML STYLING */
+
+.event_card {
+  transition: transform 0.3s ease;
+}
+
+.tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 30px;
+  background: #bb0609;
+  line-height: 11px;
+}
+
+.card-overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: rgba(0, 0, 0, 0.4); */
+  backdrop-filter: blur(6px);
+
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  opacity: 0;
+  transform: scale(0.98);
+  transition: opacity 0.4s ease, transform 0.3s ease;
+  pointer-events: none;
+  background: linear-gradient(
+      0deg,
+      rgba(27, 27, 27, 0.8) 0%,
+      rgba(27, 27, 27, 0.8) 100%
+    ),
+    rgba(0, 0, 0, 0.4);
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.event_card_img:hover .card-overlay {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: all;
+}
+
+.card-overlay button {
+  padding: 8px 16px;
+  border-radius: 48px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  min-width: 114px;
+  font-family: var(--font-family-barlow);
+}
+
+.btn-outline {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.btn-primary {
+  background: var(--Foundation-Neurtals-neurtals-50, #fff);
+  color: var(--Primary-Blue, #013453);
+}
+
+/* DAC-CONFERENCE.HTML STYLYING */
+
+.conference-banner {
+  background: url("../assets/timer-bg.png") center center / cover no-repeat;
+  color: white;
+  text-align: center;
+  background-attachment: fixed;
+  min-height: 551px;
+}
+
+.content {
+  max-width: 684px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  padding: 16px;
+  min-width: 117px;
+  border: 1px solid #c5c5c5;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 @media (max-width: 1200px) {
@@ -1347,6 +1621,9 @@ main {
 }
 
 @media (max-width: 980px) {
+  .display-none-on-desktop-flex {
+    display: flex;
+  }
   .display-none-on-desktop {
     display: block;
   }
@@ -1369,6 +1646,25 @@ main {
 }
 
 @media (max-width: 760px) {
+  .fs-40 {
+    font-size: 24px !important;
+  }
+
+  .content {
+    align-items: start;
+  }
+
+  .time-box {
+    width: 63px;
+    min-width: 63px;
+    max-width: 63px;
+    padding: 8px;
+    gap: 8px;
+  }
+
+  .time-box small {
+    font-size: 12px;
+  }
   .dac-sticky-header {
     padding: 16px 24px;
   }
@@ -1493,124 +1789,7 @@ main {
   .line-height-48 {
     line-height: 24px !important;
   }
-}
 
-/* BECOME A MEMBER HTML PAGE */
-
-.form-wrapper {
-  margin-bottom: 9px;
-}
-
-.membership-form-wrapper {
-  border-radius: 24px;
-  background: #ebf0f2;
-  padding: 80px 40px;
-}
-
-.contact-form {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px 16px;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-bottom: 2px;
-}
-
-input,
-textarea {
-  padding: 12px;
-  border: none;
-  border-radius: 12px;
-  font-size: 16px;
-  background-color: white;
-  box-sizing: border-box;
-  line-height: 24px;
-  font-family: var(--font-family-main);
-}
-
-textarea {
-  resize: none;
-}
-
-button.submit-button {
-  width: fit-content;
-  color: white;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 14px;
-  padding: 12px 28px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  border-radius: 48px;
-  border: 1px solid var(--Primary-Blue, #013453);
-  background: var(--Primary-Blue, #013453);
-}
-
-button.submit-button:hover {
-  background-color: #00344d;
-}
-
-.full-width {
-  grid-column: span 2;
-}
-
-.accordion-container {
-  background-color: #ebf0f2;
-  padding: 40px;
-  border-radius: 24px;
-}
-
-.accordion details {
-  border-bottom: 1px solid #cddfe3;
-  padding: 16px 0;
-}
-
-.accordion details:last-child {
-  border-bottom: none;
-}
-
-summary {
-  list-style: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  color: var(--Primary-Blue, #013453);
-  font-family: Barlow;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
-.icon {
-  transition: transform 0.3s ease;
-}
-
-details[open] .icon {
-  transform: rotate(180deg);
-}
-
-details p {
-  font-weight: 400;
-  font-size: 15px;
-  color: #2c3e50;
-  margin: 16px 0 0 0;
-  line-height: 1.5;
-}
-
-@media (max-width: 700px) {
   .full-width {
     grid-column: span 1;
   }
@@ -1626,5 +1805,9 @@ details p {
   }
   .w-60 {
     width: 100%;
+  }
+
+  .conference-banner {
+    text-align: left;
   }
 }
