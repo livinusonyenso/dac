@@ -51,10 +51,10 @@ let lastScrollY = window.scrollY;
 const vh = window.innerHeight;
 const imgs = document.querySelectorAll(".dac-parralex-effect");
 const header = document.querySelector(".dac-sticky-header");
-const cards = document.querySelectorAll(".events_card");
-const hamburger = document.querySelector(".mobile-hambuger");
+const cards = document.querySelectorAll(".dac-events_card");
+const hamburger = document.querySelector(".dac-mobile-hambuger");
 const mobileMenu = document.getElementById("mobileMenu");
-const closeButton = document.querySelector(".menu-close");
+const closeButton = document.querySelector(".dac-menu-close");
 header.classList.remove("hide");
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -66,25 +66,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("scroll", () => {
     const currentScrollY = window.scrollY;
-    console.log("currentScrollY ", currentScrollY);
 
     if (currentScrollY == 0) {
-      header.classList.remove("hide");
+      header.classList.remove("dac-hide");
     }
 
     if (currentScrollY > lastScrollY && currentScrollY > 10) {
       // Scrolling down - hide header
-      header.classList.add("hide");
+      header.classList.add("dac-hide");
     }
     if ((currentScrollY || lastScrollY) > 50) {
-      header.classList.remove("hide");
+      header.classList.remove("dac-hide");
     }
 
     lastScrollY = currentScrollY;
 
     // Parallax effect for main image
 
-    const image = document.querySelector(".main-image");
+    const image = document.querySelector(".dac-main-image");
     const speed = 0.2;
     const offset = window.scrollY * speed;
     if (image) {
@@ -95,18 +94,18 @@ document.addEventListener("DOMContentLoaded", () => {
   // Mobile menu toggle
 
   hamburger.addEventListener("click", () => {
-    mobileMenu.classList.add("open");
-    document.body.classList.add("no-scroll");
+    mobileMenu.classList.add("dac-open");
+    document.body.classList.add("dac-no-scroll");
   });
 
   closeButton.addEventListener("click", () => {
-    mobileMenu.classList.remove("open");
-    document.body.classList.remove("no-scroll");
+    mobileMenu.classList.remove("dac-open");
+    document.body.classList.remove("dac-no-scroll");
   });
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
-      mobileMenu.classList.remove("open");
+      mobileMenu.classList.remove("dac-open");
     }
   });
 
@@ -116,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
     (entries, obs) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
+          entry.target.classList.add("dac-is-visible");
           obs.unobserve(entry.target);
         }
       });
@@ -125,26 +124,26 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   document.querySelectorAll("section").forEach((sec) => {
-    sec.classList.add("fade-in-section");
+    sec.classList.add("dac-fade-in-section");
     observer.observe(sec);
   });
 
   // Card carousel functionality
 
-  document.querySelectorAll(".card__link").forEach((link) => {
+  document.querySelectorAll(".dac-card__link").forEach((link) => {
     link.addEventListener("click", (e) => {
       console.log(link);
       e.preventDefault();
       // Remove active class from current card
-      cards[activeIndex].classList.remove("active");
-      cards[activeIndex].classList.add("behind");
+      cards[activeIndex].classList.remove("dac-active");
+      cards[activeIndex].classList.add("dac-behind");
 
       // Move to next card
       activeIndex = (activeIndex + 1) % cards.length;
 
       // Show next card
-      cards[activeIndex].classList.add("active");
-      cards[activeIndex].classList.remove("behind");
+      cards[activeIndex].classList.add("dac-active");
+      cards[activeIndex].classList.remove("dac-behind");
     });
   });
 
@@ -209,7 +208,7 @@ function handleOWLcarous(className, responsive) {
       dots: false,
       autoplay: true,
       autoplayTimeout: 5000,
-      margin: 10,
+      margin: 24,
       responsive: responsive,
       rtl: isRTL,
       autoplayTimeout: 3000, // ⏱ Delay between slides (ms)
@@ -238,17 +237,27 @@ const countdown = () => {
   const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
 
-  document.getElementById("days").textContent = String(days).padStart(2, "0");
-  document.getElementById("hours").textContent = String(hours).padStart(2, "0");
-  document.getElementById("minutes").textContent = String(minutes).padStart(
-    2,
-    "0"
-  );
-  document.getElementById("seconds").textContent = String(seconds).padStart(
-    2,
-    "0"
-  );
+  if (
+    document.getElementById("days") ||
+    document.getElementById("hours") ||
+    document.getElementById("minutes") ||
+    document.getElementById("seconds")
+  ) {
+    document.getElementById("days").textContent = String(days).padStart(2, "0");
+    document.getElementById("hours").textContent = String(hours).padStart(
+      2,
+      "0"
+    );
+    document.getElementById("minutes").textContent = String(minutes).padStart(
+      2,
+      "0"
+    );
+    document.getElementById("seconds").textContent = String(seconds).padStart(
+      2,
+      "0"
+    );
+  }
 };
 
 const timer = setInterval(countdown, 1000);
-countdown();  
+countdown();
