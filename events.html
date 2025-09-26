@@ -18,76 +18,84 @@
     <meta property="og:image" content="">
     <link href='https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap'
         rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
 </head>
 
-<body>
-    <a href="#dac-main-content" class="skip-link visually-hidden-focusable">Skip to main content</a>
+<body class="dac-body">
+    <a href="#dac-main-content" class="dac-skip-link dac-visually-hidden-focusable">Skip to main content</a>
 
-
-    <header class="dac-sticky-header flex justify-between items-center py-16 bg-white" role="banner"
+    <header class="dac-sticky-header d-flex justify-content-between align-items-center py-16 dac-bg-white" role="banner"
         aria-label="Main site header">
-        <div class="logo-container flex items-center gap-12" aria-label="Dubai Association Centre logo">
-            <a href="./index.html" class="no-underline">
-                <img src="./assets/dac-logo.svg" alt="Dubai Association Centre logo" class="logo" />
+        <div class="dac-logo-container d-flex align-items-center dac-gap-12" aria-label="Dubai Association Centre logo">
+            <a href="./index.html" class="dac-no-underline">
+                <img src="./assets/dac-logo.svg" alt="Dubai Association Centre logo" class="dac-logo" />
             </a>
         </div>
 
-        <nav class="main-nav flex gap-32 items-center fs-14 uppercase ls-005 display-none-on-mobile"
+        <nav class="dac-main-nav d-flex dac-gap-32 align-items-center dac-fs-14 dac-uppercase dac-ls-005 dac-display-none-on-mobile"
             aria-label="Main navigation">
-            <a href="./about.html" class="no-underline text-primary font-barlow fs-10 font-500 ls-08 uppercase"
+            <a href="./about.html"
+                class="dac-no-underline dac-text-primary dac-font-barlow dac-fs-10 dac-font-500 dac-ls-08 dac-uppercase"
                 aria-label="About DAC"> About DAC </a>
-            <a href="./becomeMember.html" class="no-underline text-primary font-barlow fs-10 font-500 ls-08 uppercase"
+            <a href="./becomeMember.html"
+                class="dac-no-underline dac-text-primary dac-font-barlow dac-fs-10 dac-font-500 dac-ls-08 dac-uppercase"
                 aria-label="Become a Member"> Become a Member </a>
-            <a href="./licenseRenewal.html" class="no-underline text-primary font-barlow fs-10 font-500 ls-08 uppercase"
+            <a href="./licenseRenewal.html"
+                class="dac-no-underline dac-text-primary dac-font-barlow dac-fs-10 dac-font-500 dac-ls-08 dac-uppercase"
                 aria-label="License Renewal"> License Renewal </a>
             <a href="./events.html"
-                class="no-underline text-secondary font-barlow fs-10 font-600 ls-08 uppercase active"
+                class="dac-no-underline dac-text-secondary dac-font-barlow dac-fs-10 dac-font-600 dac-ls-08 dac-uppercase dac-active"
                 aria-current="page" aria-label="Events"> Events </a>
-            <a href="#" class="no-underline text-secondary font-barlow fs-10 font-600 ls-08 uppercase active"
+            <a href="./dacConferences.html"
+                class="dac-no-underline dac-text-secondary dac-font-barlow dac-fs-10 dac-font-600 dac-ls-08 dac-uppercase dac-active"
                 aria-current="page" aria-label="Conferences"> Conferences </a>
-            <div class="header-buttons flex gap-16 items-center" aria-label="Header action buttons">
+            <div class="dac-header-buttons d-flex dac-gap-16 align-items-center" aria-label="Header action buttons">
                 <a href="./contactUs.html"
-                    class="btn primary flex px-16 py-8 rounded-32 font-barlow fs-10 font-700 uppercase gap-10 text-center white-space-nowrap no-underline"
+                    class="dac-btn dac-primary d-flex dac-px-16 dac-py-8 dac-rounded-32 dac-font-barlow dac-fs-10 dac-font-700 dac-uppercase dac-gap-10 dac-text-center dac-white-space-nowrap dac-no-underline"
                     aria-label="Get in Touch"> Get in Touch </a>
                 <a href="#"
-                    class="btn outline flex px-16 py-8 rounded-32 font-barlow fs-10 font-700 uppercase gap-10 text-primary text-center white-space-nowrap no-underline"
+                    class="dac-btn dac-outline d-flex dac-px-16 dac-py-8 dac-rounded-32 dac-font-barlow dac-fs-10 dac-font-700 dac-uppercase dac-gap-10 dac-text-primary dac-text-center dac-white-space-nowrap dac-no-underline"
                     aria-label="Login or Register"> Login or Register </a>
             </div>
         </nav>
 
-        <div class="mobile-hambuger display-none-on-desktop" aria-label="Open mobile menu" role="button" tabindex="0"
-            aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobileMenu" id="hamburgerBtn">
-            <img src="./assets/hamburger-icon.svg" alt="Hamburger menu icon" class="hamburger-icon" />
+        <div class="dac-mobile-hambuger dac-display-none-on-desktop" aria-label="Open mobile menu" role="button"
+            tabindex="0" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobileMenu"
+            id="hamburgerBtn">
+            <img src="./assets/hamburger-icon.svg" alt="Hamburger menu icon" class="dac-hamburger-icon" />
         </div>
 
-
-        <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation" role="navigation" aria-hidden="true">
-            <div class="menu-header">
-                <div class="menu-close" aria-label="Close menu" role="button" tabindex="0">✕</div>
+        <nav class="dac-mobile-menu" id="mobileMenu" aria-label="Mobile navigation" role="navigation"
+            aria-hidden="true">
+            <div class="dac-menu-header">
+                <div class="dac-menu-close" aria-label="Close menu" role="button" tabindex="0">✕</div>
             </div>
-            <ul class="menu-list">
-                <li> <a class="hero-text-paragraph text-decoration-none color-white " href="./about.html">
+            <ul class="dac-menu-list">
+                <li> <a class="dac-hero-text-paragraph dac-text-decoration-none dac-color-white" href="./about.html">
                         About
                     </a>
                 </li>
                 <li>
-                    <a class="hero-text-paragraph text-decoration-none color-white " href="./becomeMember.html">
+                    <a class="dac-hero-text-paragraph dac-text-decoration-none dac-color-white"
+                        href="./becomeMember.html">
                         Become a Member
                     </a>
                 </li>
-                <li><a class="hero-text-paragraph text-decoration-none color-white " href="./licenseRenewal.html">
+                <li><a class="dac-hero-text-paragraph dac-text-decoration-none dac-color-white"
+                        href="./licenseRenewal.html">
                         License Renewal
                     </a>
                 </li>
                 <li>
-                    <a class="hero-text-paragraph text-decoration-none color-white " href="./events.html">
+                    <a class="dac-hero-text-paragraph dac-text-decoration-none dac-color-white" href="./events.html">
                         Events
                     </a>
                 </li>
                 <li>
-                    <a class="hero-text-paragraph text-decoration-none color-white " href="#">
+                    <a class="dac-hero-text-paragraph dac-text-decoration-none dac-color-white"
+                        href="./dacConferences.html">
                         Conferences
                     </a>
                 </li>
@@ -95,26 +103,24 @@
         </nav>
     </header>
 
-
-
-    <div class="header-buttons flex gap-16 items-center justify-center display-none-on-desktop-flex mt-40 p-8"
+    <div class="dac-header-buttons d-flex dac-gap-16 align-items-center justify-content-center dac-display-none-on-desktop-flex dac-mt-40 dac-p-8"
         aria-label="Header action buttons">
         <a href="./contactUs.html"
-            class="btn primary flex px-16 py-8 rounded-32 font-barlow fs-10 font-700 uppercase gap-10 text-center white-space-nowrap no-underline flex-one justify-center "
+            class="dac-btn dac-primary d-flex dac-px-16 dac-py-8 dac-rounded-32 dac-font-barlow dac-fs-10 dac-font-700 dac-uppercase dac-gap-10 dac-text-center dac-white-space-nowrap dac-no-underline dac-flex-one justify-content-center"
             aria-label="Get in Touch"> Get in Touch </a>
         <a href="#"
-            class="btn outline flex px-16 py-8 rounded-32 font-barlow fs-10 font-700 uppercase gap-10 text-primary text-center white-space-nowrap no-underline flex-one justify-center"
+            class="dac-btn dac-outline d-flex dac-px-16 dac-py-8 dac-rounded-32 dac-font-barlow dac-fs-10 dac-font-700 dac-uppercase dac-gap-10 dac-text-primary dac-text-center dac-white-space-nowrap dac-no-underline dac-flex-one justify-content-center"
             aria-label="Login or Register"> Login or Register </a>
     </div>
 
     <main role="main" id="dac-main-content">
 
-        <section class="flex gap-24 mt-80 flex-wrap" aria-labelledby="community-heading">
-            <h2 id="community-heading" class="flex-one hero-text-heading">
-                Upcoming Events
+        <!-- <section class="flex gap-24 mt-80 flex-wrap" aria-labelledby="community-heading">
+            <h2 id="community-heading" class="dac-flex-one hero-text-heading">
+                Events
             </h2>
 
-            <div class="flex-one flex flex-col gap-24">
+            <div class="dac-flex-one flex flex-col gap-24">
                 <p class="hero-text-paragraph p-0 m-0">
                     Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu. Neque mi arcu nunc velit.
                     Ipsum congue cursus egestas ullamcorper vestibulum mus. Tristique enim risus leo ac vel auctor morbi
@@ -210,17 +216,17 @@
 
         <section class="flex gap-24 mt-24 flex-wrap mobile-flex-wrap" aria-labelledby="mission-vision-heading">
             <article
-                class="color-sky-blue-bg flex-one flex flex-col gap-24 p-40 about_bg rounded-16 justify-between color-sky-blue p-40 dac-zoom-in h-360 ">
+                class="color-sky-blue-bg dac-flex-one flex flex-col gap-24 p-40 about_bg rounded-16 justify-between color-sky-blue p-40 dac-zoom-in h-360 ">
                 <h2 class="color-dark-blue m-0 p-0 fs-32 line-height-40 font-600">Venue recommendations</h2>
                 <p class="m-0 p-0 hero-text-paragraph">Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada
                     purus arcu. Neque mi arcu nunc velit.
                     Ipsum congue cursus egestas ullamcorper vestibulum mus. </p>
             </article>
-            <article class="flex-one  dac-zoom-in rounded-16 h-360  overflow-hidden">
+            <article class="d-flex-one  dac-zoom-in rounded-16 h-360  overflow-hidden">
                 <img src="./assets/professional-ecosystem.png" class="w-100 object-cover h-100" />
             </article>
             <article
-                class="flex-one flex flex-col bg_primary vision_card rounded-16 flex gap-24  p-40 fs-32 color-sky-blue font-600 line-height-40 bg-primary dac-zoom-in h-360  justify-end">
+                class="d-flex-one flex flex-col bg_primary vision_card rounded-16 flex gap-24  p-40 fs-32 color-sky-blue font-600 line-height-40 bg-primary dac-zoom-in h-360  justify-end">
                 <p class="fs-32 font-600 line-height-48 m-0 p-0">Marketing assistance</p>
                 <p class="font-400 line-height-24 p-0 m-0 fs-16">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, maiores, saepe tempora quidem itaque
@@ -230,10 +236,10 @@
         </section>
 
         <section class="flex gap-24 mt-80 flex-wrap" aria-labelledby="why-associations-heading">
-            <h2 class="flex-one hero-text-heading" id="why-associations-heading">
-                Past Events
+            <h2 class="d-flex-one hero-text-heading" id="why-associations-heading">
+                Past Conferences
             </h2>
-            <div class="flex-one flex flex-col gap-24">
+            <div class="d-flex-one flex flex-col gap-24">
                 <p class="m-0 p-0 hero-text-paragraph"
                     aria-label="Dubai Association Centre provides a formal framework for professional associations to establish a presence in Dubai.">
                     Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu. Neque mi arcu nunc velit.
@@ -294,34 +300,247 @@
 
             </div>
 
+        </section> -->
+
+        <section class="d-flex dac-gap-24 dac-mt-80 dac-flex-wrap" aria-labelledby="community-heading">
+            <h2 id="community-heading" class="dac-flex-one dac-hero-text-heading">
+                Events
+            </h2>
+
+            <div class="dac-flex-one d-flex flex-column dac-gap-24">
+                <p class="dac-hero-text-paragraph dac-p-0 dac-m-0">
+                    Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu. Neque mi arcu nunc velit.
+                    Ipsum congue cursus egestas ullamcorper vestibulum mus. Tristique enim risus leo ac vel auctor morbi
+                    mauris. Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu. Neque mi arcu nunc
+                    velit. Ipsum congue cursus egestas ullamcorper vestibulum mus. Tristique enim risus leo ac vel
+                    auctor morbi mauris.
+                </p>
+            </div>
+        </section>
+
+        <section class="dac-mt-80 owl-container" aria-label="Objective 3">
+            <div class="owl-carousel owl-theme" id="owl-carousel-one">
+                <div
+                    class="item dac-event_card dac-gap-24 dac-overflow-hidden d-flex flex-column dac-position-relative">
+                    <div
+                        class="dac-h-470 dac-event_card_img dac-rounded-16 dac-overflow-hidden dac-position-relative dac-cursor-pointer">
+                        <img class="dac-h-100 dac-w-100 dac-object-cover" src="./assets/event-H.E.MattarAlTayer.png"
+                            alt="Event Image" />
+                        <div class="dac-tag dac-font-600"><span class="dac-font-900"> DAC </span> Event</div>
+                        <div
+                            class="dac-card-overlay dac-position-absolute d-flex flex-column dac-justify-center dac-align-items-center dac-flex">
+                            <button class="dac-btn-outline dac-fs-12 dac-font-700 dac-color-white">
+                                <a href="./eventDetails.html" class="dac-no-underline dac-color-white">VIEW DETAILS</a>
+                            </button>
+                            <button class="dac-btn-primary dac-fs-12 dac-font-700">REGISTER NOW</button>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column dac-gap-24">
+                        <div class="d-flex flex-column dac-gap-8">
+                            <div class="dac-font-700 dac-color-foundation-400">22 Feb, 2025</div>
+                            <div class="dac-fs-24 dac-font-600 dac-text-primary">Lorem ipsum dolor sit amet</div>
+                        </div>
+                        <div class="dac-line-height-24 dac-font-400">
+                            Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu.
+                            Neque mi arcu nunc velit.
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="item dac-event_card dac-gap-24 dac-overflow-hidden d-flex flex-column dac-position-relative">
+                    <div
+                        class="dac-h-470 dac-event_card_img dac-rounded-16 dac-overflow-hidden dac-position-relative dac-cursor-pointer">
+                        <img class="dac-h-100 dac-w-100 dac-object-cover" src="./assets/member-banner.png"
+                            alt="Event Image" />
+                        <div class="dac-tag dac-font-600"><span class="dac-font-900"> Members </span> Event</div>
+                        <div
+                            class="dac-card-overlay dac-position-absolute d-flex flex-column dac-justify-center dac-align-items-center dac-flex">
+                            <button class="dac-btn-outline dac-fs-12 dac-font-700 dac-color-white">
+                                <a href="./eventDetails.html" class="dac-no-underline dac-color-white">VIEW DETAILS</a>
+                            </button>
+                            <button class="dac-btn-primary dac-fs-12 dac-font-700">REGISTER NOW</button>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column dac-gap-24">
+                        <div class="d-flex flex-column dac-gap-8">
+                            <div class="dac-font-700 dac-color-foundation-400">22 Feb, 2025</div>
+                            <div class="dac-fs-24 dac-font-600 dac-text-primary">Lorem ipsum dolor sit amet</div>
+                        </div>
+                        <div class="dac-line-height-24 dac-font-400">
+                            Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu.
+                            Neque mi arcu nunc velit.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dac-action-cards dac-mt-80 dac-gap-24"
+            aria-label="Actions to register or scale your association in Dubai">
+            <article class="dac-card dac-dark-card dac-h-360 dac-height-fit-content dac-zoom-in">
+                <div class="dac-card-content dac-p-40">
+                    <h3 class="dac-m-0 dac-p-0 dac-fs-48 dac-color-white dac-line-height-48"
+                        aria-label="Event planning support">
+                        Event planning support
+                    </h3>
+                    <p class="dac-m-0 dac-p-0 dac-header-text-paragraph dac-line-height-24 dac-font-400">
+                        Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu. Neque mi arcu nunc
+                        velit. Ipsum congue cursus egestas ullamcorper vestibulum mus.
+                    </p>
+                </div>
+            </article>
+
+            <article class="dac-card dac-image-card dac-h-360 dac-max-height-360 dac-zoom-in dac-overflow-hidden"
+                aria-label="Scale your association to Dubai, card with background image of Dubai skyline">
+                <img src="./assets/event-planner.png" class="dac-h-100 dac-object-cover dac-w-100" />
+            </article>
+        </section>
+
+        <section class="d-flex dac-gap-24 dac-mt-24 dac-flex-wrap dac-mobile-flex-wrap"
+            aria-labelledby="mission-vision-heading">
+            <article
+                class="dac-color-sky-blue-bg dac-flex-one d-flex flex-column dac-gap-24 dac-p-40 dac-about_bg dac-rounded-16 justify-content-between dac-color-sky-blue dac-p-40 dac-zoom-in dac-h-360">
+                <h2 class="dac-color-dark-blue dac-m-0 dac-p-0 dac-fs-32 dac-line-height-40 dac-font-600">Venue
+                    recommendations</h2>
+                <p class="dac-m-0 dac-p-0 dac-hero-text-paragraph">
+                    Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu. Neque mi arcu nunc velit.
+                    Ipsum congue cursus egestas ullamcorper vestibulum mus.
+                </p>
+            </article>
+            <article class="dac-flex-one dac-zoom-in dac-rounded-16 dac-h-360 dac-overflow-hidden">
+                <img src="./assets/professional-ecosystem.png" class="dac-w-100 dac-object-cover dac-h-100" />
+            </article>
+            <article
+                class="dac-flex-one d-flex flex-column dac-bg_primary dac-vision_card dac-rounded-16 d-flex dac-gap-24 dac-p-40 dac-fs-32 dac-color-sky-blue dac-font-600 dac-line-height-40 dac-bg-primary dac-zoom-in dac-h-360 justify-content-end">
+                <p class="dac-fs-32 dac-font-600 dac-line-height-48 dac-m-0 dac-p-0">Marketing assistance</p>
+                <p class="dac-font-400 dac-line-height-24 dac-p-0 dac-m-0 dac-fs-16">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, maiores, saepe tempora quidem itaque
+                    exercitationem ut dignissimos facere ratione voluptatem animi doloremque.
+                </p>
+            </article>
+        </section>
+
+        <section class="d-flex dac-gap-24 dac-mt-80 dac-flex-wrap" aria-labelledby="why-associations-heading">
+            <h2 class="dac-flex-one dac-hero-text-heading" id="why-associations-heading">
+                Past Conferences
+            </h2>
+            <div class="dac-flex-one d-flex flex-column dac-gap-24">
+                <p class="dac-m-0 dac-p-0 dac-hero-text-paragraph"
+                    aria-label="Dubai Association Centre provides a formal framework for professional associations to establish a presence in Dubai.">
+                    Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu. Neque mi arcu nunc velit.
+                    Ipsum congue cursus egestas ullamcorper vestibulum mus. Tristique enim risus leo ac vel auctor morbi
+                    mauris. Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu. Neque mi arcu nunc
+                    velit. Ipsum congue cursus egestas..
+                </p>
+            </div>
+        </section>
+
+        <section class="dac-mt-80 owl-container" aria-label="Objective 3">
+            <div class="owl-carousel owl-theme" id="owl-carousel-two">
+                <div
+                    class="item dac-event_card dac-gap-24 dac-overflow-hidden d-flex flex-column dac-position-relative">
+                    <div
+                        class="dac-h-470 dac-event_card_img dac-rounded-16 dac-overflow-hidden dac-position-relative dac-cursor-pointer">
+                        <img class="dac-h-100 dac-w-100 dac-object-cover" src="./assets/event-chairman.png"
+                            alt="Event Image" />
+                        <div class="dac-tag dac-font-600"><span class="dac-font-900"> Members </span> Event</div>
+                        <div
+                            class="dac-card-overlay dac-position-absolute d-flex flex-column dac-justify-center dac-align-items-center dac-flex">
+                            <button class="dac-btn-outline dac-fs-12 dac-font-700 dac-color-white">VIEW DETAILS</button>
+                            <button class="dac-btn-primary dac-fs-12 dac-font-700">REGISTER NOW</button>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column dac-gap-24">
+                        <div class="d-flex flex-column dac-gap-8">
+                            <div class="dac-font-700 dac-color-foundation-400">22 Feb, 2025</div>
+                            <div class="dac-fs-24 dac-font-600 dac-text-primary">Lorem ipsum dolor sit amet</div>
+                        </div>
+                        <div class="dac-line-height-24 dac-font-400">
+                            Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu.
+                            Neque mi arcu nunc velit.
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="item dac-event_card dac-gap-24 dac-overflow-hidden d-flex flex-column dac-position-relative">
+                    <div
+                        class="dac-h-470 dac-event_card_img dac-rounded-16 dac-overflow-hidden dac-position-relative dac-cursor-pointer">
+                        <img class="dac-h-100 dac-w-100 dac-object-cover" src="./assets/member-banner.png"
+                            alt="Event Image" />
+                        <div class="dac-tag dac-font-600"><span class="dac-font-900"> Members </span> Event</div>
+                        <div
+                            class="dac-card-overlay dac-position-absolute d-flex flex-column dac-justify-center dac-align-items-center dac-flex">
+                            <button class="dac-btn-outline dac-fs-12 dac-font-700 dac-color-white">VIEW DETAILS</button>
+                            <button class="dac-btn-primary dac-fs-12 dac-font-700">REGISTER NOW</button>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column dac-gap-24">
+                        <div class="d-flex flex-column dac-gap-8">
+                            <div class="dac-font-700 dac-color-foundation-400">22 Feb, 2025</div>
+                            <div class="dac-fs-24 dac-font-600 dac-text-primary">Lorem ipsum dolor sit amet</div>
+                        </div>
+                        <div class="dac-line-height-24 dac-font-400">
+                            Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu.
+                            Neque mi arcu nunc velit.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
-        <footer class="dac-footer mt-80" role="contentinfo" aria-label="Dubai Association Centre footer">
+        <footer class="dac-footer dac-mt-80" role="contentinfo" aria-label="Dubai Association Centre footer">
             <img src="./assets/footer-logo-bg.png" alt="Dubai Association Centre Logo" />
             <div class="dac-footer__logo-info" aria-label="Footer logo and contact information">
                 <div class="dac-footer__info">
-                    <p class="cursor-pointer m-0 text-paragraph-sm color-off-white">Dubai Association Centre</p>
-                    <p class="cursor-pointer m-0 text-paragraph-sm color-off-white">Sheikh Zayed Road, Dubai</p>
-                    <p class="cursor-pointer m-0 text-paragraph-sm color-off-white">
+                    <p class="dac-cursor-pointer dac-m-0 dac-text-paragraph-sm dac-color-off-white">Dubai Association
+                        Centre</p>
+                    <p class="dac-cursor-pointer dac-m-0 dac-text-paragraph-sm dac-color-off-white">Sheikh Zayed Road,
+                        Dubai</p>
+                    <p class="dac-cursor-pointer dac-m-0 dac-text-paragraph-sm dac-color-off-white">
                         Info@dubaichamberinternational.com
                     </p>
-                    <p class="cursor-pointer m-0 text-paragraph-sm color-off-white">+971-XXX-XXXX</p>
+                    <p class="dac-cursor-pointer dac-m-0 dac-text-paragraph-sm dac-color-off-white">+971-XXX-XXXX</p>
                 </div>
             </div>
             <nav class="dac-footer__links" aria-label="Footer navigation">
-                <ul class="m-0 p-0 flex flex-col gap-4">
-                    <li class="m-0 list-style-none cursor-pointer m-0 text-paragraph-sm">About DAC</li>
-                    <li class="m-0 list-style-none cursor-pointer m-0 text-paragraph-sm">Become A Member</li>
-                    <li class="m-0 list-style-none cursor-pointer m-0 text-paragraph-sm">Licensing Renewal</li>
-                    <li class="m-0 list-style-none cursor-pointer m-0 text-paragraph-sm">Events & Conferences</li>
-                    <li class="m-0 list-style-none cursor-pointer m-0 text-paragraph-sm">Get In Touch</li>
+                <ul class="dac-m-0 dac-p-0 d-flex flex-column dac-gap-4">
+                    <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
+                            class="dac-text-decoration-none dac-color-black" href="./about.html"
+                            referrerpolicy="no-referrer">About DAC</a></li>
+                    <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
+                            class="dac-text-decoration-none dac-color-black" href="./becomeMember.html"
+                            referrerpolicy="no-referrer"> Become A Member </a> </li>
+                    <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
+                            class="dac-text-decoration-none dac-color-black" href="./licenseRenewal.html"
+                            referrerpolicy="no-referrer"> Licensing Renewal</a> </li>
+                    <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
+                            class="dac-text-decoration-none dac-color-black" href="./events.html"
+                            referrerpolicy="no-referrer">Events </a> </li>
+                    <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
+                            class="dac-text-decoration-none dac-color-black" href="./dacConferences.html"
+                            referrerpolicy="no-referrer"> Conferences</a> </li>
+                    <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
+                            class="dac-text-decoration-none dac-color-black" href="./contactUs.html"
+                            referrerpolicy="no-referrer"> Get In Touch</a> </li>
+                    <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
+                            class="dac-text-decoration-none dac-color-black" href="./faq.html"
+                            referrerpolicy="no-referrer">
+                            Frequently Asked Questions </a> </li>
                 </ul>
             </nav>
             <nav class="dac-footer__links" aria-label="Legal links">
-                <ul class="m-0 p-0 flex flex-col gap-4">
-                    <li class="m-0 list-style-none cursor-pointer m-0 text-paragraph-sm">Terms & Conditions</li>
-                    <li class="m-0 list-style-none cursor-pointer m-0 text-paragraph-sm">Privacy Policy</li>
+                <ul class="dac-m-0 dac-p-0 d-flex flex-column dac-gap-4">
+                    <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
+                            class="dac-text-decoration-none dac-color-black" href="#" referrerpolicy="no-referrer">
+                            Terms &
+                            Conditions </a> </li>
+                    <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
+                            class="dac-text-decoration-none dac-color-black" href="#" referrerpolicy="no-referrer">
+                            Privacy
+                            Policy </a> </li>
                 </ul>
             </nav>
 
