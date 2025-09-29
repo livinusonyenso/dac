@@ -65,21 +65,21 @@ document.addEventListener("DOMContentLoaded", () => {
   //sticky header functionality
 
   window.addEventListener("scroll", () => {
-    const currentScrollY = window.scrollY;
+    // const currentScrollY = window.scrollY;
 
-    if (currentScrollY == 0) {
-      header.classList.remove("dac-hide");
-    }
+    // if (currentScrollY == 0) {
+    //   header.classList.remove("dac-hide");
+    // }
 
-    if (currentScrollY > lastScrollY && currentScrollY > 10) {
-      // Scrolling down - hide header
-      header.classList.add("dac-hide");
-    }
-    if ((currentScrollY || lastScrollY) > 50) {
-      header.classList.remove("dac-hide");
-    }
+    // if (currentScrollY > lastScrollY && currentScrollY > 10) {
+    //   // Scrolling down - hide header
+    //   header.classList.add("dac-hide");
+    // }
+    // if ((currentScrollY || lastScrollY) > 50) {
+    //   header.classList.remove("dac-hide");
+    // }
 
-    lastScrollY = currentScrollY;
+    // lastScrollY = currentScrollY;
 
     // Parallax effect for main image
 
