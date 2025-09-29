@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { threshold: 0.2 }
   );
 
-  document.querySelectorAll("section").forEach((sec) => {
+  document.querySelectorAll(".dac-section").forEach((sec) => {
     sec.classList.add("dac-fade-in-section");
     observer.observe(sec);
   });
