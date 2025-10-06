@@ -25,11 +25,10 @@
 </head>
 
 <body class="dac-body">
-
     <a href="#dac-main-content" class="dac-skip-link dac-visually-hidden-focusable">Skip to main content</a>
 
-    <header class="dac-sticky-header d-flex justify-content-between align-items-center py-16 dac-bg-white" role="banner"
-        aria-label="Main site header">
+    <header class="dac-sticky-header d-flex justify-content-between align-items-center py-16 dac-bg-white dac-padding"
+        role="banner" aria-label="Main site header">
         <div class="dac-logo-container d-flex align-items-center dac-gap-12" aria-label="Dubai Association Centre logo">
             <a href="./index.html" class="dac-no-underline">
                 <img src="./assets/dac-logo.svg" alt="Dubai Association Centre logo" class="dac-logo" />
@@ -115,9 +114,9 @@
             aria-label="Login or Register"> Login or Register </a>
     </div>
 
-    <main role="main" id="dac-main-content">
+    <main class="dac-padding" role="main" id="dac-main-content">
 
-        <section class="d-flex dac-gap-24 dac-mt-80 dac-flex-wrap" aria-labelledby="community-heading">
+        <section class="dac-section d-flex dac-gap-24 dac-mt-80 dac-flex-wrap" aria-labelledby="community-heading">
             <h2 id="community-heading" class="dac-flex-one dac-hero-text-heading">
                 Become A Member
             </h2>
@@ -138,7 +137,7 @@
             </div>
         </section>
 
-        <section class="dac-action-cards dac-mt-80" aria-label="Actions to register or scale your association in Dubai">
+        <section class="dac-section dac-action-cards dac-mt-80" aria-label="Actions to register or scale your association in Dubai">
 
             <article class="dac-card dac-image-card dac-zoom-in dac-h-360 dac-height-fit-content dac-bg-membership"
                 aria-label="Scale your association to Dubai, card with background image of Dubai skyline">
@@ -157,7 +156,7 @@
 
         </section>
 
-        <section class="d-flex dac-gap-24 dac-mt-24 dac-flex-wrap dac-mobile-flex-wrap"
+        <section class="dac-section d-flex dac-gap-24 dac-mt-24 dac-flex-wrap dac-mobile-flex-wrap"
             aria-labelledby="mission-vision-heading">
             <article
                 class="dac-color-sky-blue-bg dac-flex-one d-flex flex-column dac-gap-24 dac-p-40 dac-about_bg dac-rounded-16 justify-content-between dac-color-sky-blue dac-p-40 dac-zoom-in">
@@ -176,7 +175,7 @@
             </article>
         </section>
 
-        <section class="d-flex dac-gap-24 dac-mt-80 dac-flex-wrap" aria-labelledby="why-associations-heading">
+        <section class="dac-section d-flex dac-gap-24 dac-mt-80 dac-flex-wrap" aria-labelledby="why-associations-heading">
             <h2 class="dac-flex-one dac-hero-text-heading" id="why-associations-heading">
                 Benefits of Membership
             </h2>
@@ -191,7 +190,7 @@
             </div>
         </section>
 
-        <section class="dac-mt-80 owl-container" aria-label="Objective 3">
+        <section class="dac-section dac-mt-80 owl-container" aria-label="Objective 3">
             <div class="owl-carousel owl-theme" id="owl-carousel-one">
                 <div
                     class="item dac-border-sky-blue dac-rounded-24 dac-p-40 d-flex flex-column justify-content-between dac-min-height-444 ">
@@ -235,7 +234,7 @@
             </div>
         </section>
 
-        <section class="d-flex dac-gap-24 dac-mt-80 dac-flex-wrap" aria-labelledby="why-associations-heading">
+        <section class="dac-section d-flex dac-gap-24 dac-mt-80 dac-flex-wrap" aria-labelledby="why-associations-heading">
             <h2 class="dac-flex-one dac-hero-text-heading" id="why-associations-heading">
                 Join A Thriving Community Of 75+ Global Associations
             </h2>
@@ -257,7 +256,7 @@
             </div>
         </section>
 
-        <section class="dac-mt-80 dac-owl-container" aria-label="Objective 3">
+        <section class="dac-section dac-mt-80 dac-owl-container" aria-label="Objective 3">
             <div class="owl-carousel owl-theme" id="owl-carousel-two">
                 <div
                     class="item dac-border-sky-blue dac-rounded-24 dac-p-40 d-flex flex-column justify-content-between dac-min-height-444 ">
@@ -309,7 +308,7 @@
             </div>
         </section>
 
-        <section class="dac-mt-80 dac-owl-container d-flex dac-gap-64 dac-flex-wrap dac-membership-form-wrapper"
+        <section class="dac-section dac-mt-80 dac-owl-container d-flex dac-gap-64 dac-flex-wrap dac-membership-form-wrapper"
             aria-labelledby="why-associations-heading">
             <div class="dac-mw-460 d-flex flex-column dac-gap-32">
                 <h2 class="dac-hero-text-heading" id="why-associations-heading">
@@ -326,15 +325,14 @@
                     <form class="dac-gap-24 d-flex flex-column ">
                         <div class="d-flex dac-gap-16 dac-flex-wrap">
                             <div class="dac-form-group dac-flex-one">
-                                <label class="dac-font-600 dac-line-height-24 dac-color-foundation-400"
-                                    for="full-name">
-                                    Full  Name
+                                <label class="dac-font-600 dac-line-height-24 dac-color-foundation-400" for="full-name">
+                                    Full Name
                                 </label>
-                                <input class="dac-input" type="text" id="full-name" placeholder="Blue Acer Group of Companies">
+                                <input class="dac-input" type="text" id="full-name"
+                                    placeholder="Blue Acer Group of Companies">
                             </div>
                             <div class="dac-form-group dac-flex-one">
-                                <label class="dac-font-600 dac-line-height-24 dac-color-foundation-400"
-                                    for="email">
+                                <label class="dac-font-600 dac-line-height-24 dac-color-foundation-400" for="email">
                                     Email Address
                                 </label>
                                 <input class="dac-input" type="email" id="email" placeholder="akona@gmail.com">
@@ -342,8 +340,7 @@
                         </div>
                         <div class="d-flex dac-gap-16 dac-flex-wrap">
                             <div class="dac-form-group dac-flex-one">
-                                <label class="dac-font-600 dac-line-height-24 dac-color-foundation-400"
-                                    for="contact">
+                                <label class="dac-font-600 dac-line-height-24 dac-color-foundation-400" for="contact">
                                     Contact Number
                                 </label>
                                 <input class="dac-input" type="tel" id="contact" placeholder="+971 321 4567895">
@@ -358,7 +355,8 @@
                             <div class="dac-form-group dac-flex-one">
                                 <label class="dac-font-600 dac-line-height-24 dac-color-foundation-400"
                                     for="association-name">Association Name</label>
-                                <input class="dac-input" type="text" id="association-name" placeholder="Blue Aces Association">
+                                <input class="dac-input" type="text" id="association-name"
+                                    placeholder="Blue Aces Association">
                             </div>
                             <div class="dac-form-group dac-flex-one">
                                 <label class="dac-font-600 dac-line-height-24 dac-color-foundation-400"

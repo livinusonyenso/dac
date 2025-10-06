@@ -27,8 +27,8 @@
 <body class="dac-body">
     <a href="#dac-main-content" class="dac-skip-link dac-visually-hidden-focusable">Skip to main content</a>
 
-    <header class="dac-sticky-header d-flex justify-content-between align-items-center py-16 dac-bg-white" role="banner"
-        aria-label="Main site header">
+    <header class="dac-sticky-header d-flex justify-content-between align-items-center py-16 dac-bg-white dac-padding"
+        role="banner" aria-label="Main site header">
         <div class="dac-logo-container d-flex align-items-center dac-gap-12" aria-label="Dubai Association Centre logo">
             <a href="./index.html" class="dac-no-underline">
                 <img src="./assets/dac-logo.svg" alt="Dubai Association Centre logo" class="dac-logo" />
@@ -114,9 +114,9 @@
             aria-label="Login or Register"> Login or Register </a>
     </div>
 
-    <main role="main" id="dac-main-content">
+    <main class="dac-padding" role="main" id="dac-main-content">
 
-        <section class="d-flex dac-gap-24 dac-mt-80 dac-flex-wrap" aria-labelledby="community-heading">
+        <section class="dac-section d-flex dac-gap-24 dac-mt-80 dac-flex-wrap" aria-labelledby="community-heading">
             <h2 id="community-heading" class="dac-flex-one dac-hero-text-heading">
                 About Dubai Association Centre
             </h2>
@@ -137,11 +137,11 @@
             </div>
         </section>
 
-        <div class="dac-mt-80 d-flex align-items-center dac-justify-center dac-video-container"
+        <div class="dac-mt-80 d-flex align-items-center dac-justify-center dac-video-container dac-video-container-about"
             aria-label="video-section">
         </div>
 
-        <section class="d-flex dac-gap-24 dac-mt-80 dac-flex-wrap" aria-labelledby="community-heading">
+        <section class="dac-section d-flex dac-gap-24 dac-mt-80 dac-flex-wrap" aria-labelledby="community-heading">
             <h2 id="community-heading" class="dac-flex-one dac-hero-text-heading">
                 Our History
             </h2>
@@ -157,7 +157,7 @@
             </div>
         </section>
 
-        <section class="dac-action-cards dac-mt-80 dac-gap-24"
+        <section class="dac-section dac-action-cards dac-mt-80 dac-gap-24"
             aria-label="Actions to register or scale your association in Dubai">
 
             <article class="dac-card dac-dark-card dac-h-360 dac-height-fit-content dac-zoom-in">
@@ -175,27 +175,32 @@
 
         </section>
 
-        <section class="d-flex dac-gap-24 dac-mt-24 dac-flex-wrap dac-mobile-flex-wrap"
+        <section class="dac-section d-flex dac-gap-24 dac-mt-24 dac-flex-wrap dac-mobile-flex-wrap "
             aria-labelledby="mission-vision-heading">
             <article
-                class="dac-color-sky-blue-bg dac-flex-one d-flex flex-column dac-gap-24 dac-p-40 dac-about_bg dac-rounded-16 dac-justify-between dac-color-sky-blue dac-p-40 dac-zoom-in ">
-                <h2 class="dac-color-dark-blue dac-m-0 dac-p-0 dac-fs-32 dac-line-height-40 dac-font-600">Mission &
-                    Vision</h2>
-                <p class="dac-m-0 dac-p-0 dac-hero-text-paragraph">Lorem ipsum dolor sit amet consectetur. Sapien arcu
+                class="dac-color-sky-blue-bg dac-flex-one d-flex flex-column dac-gap-24 dac-p-40 dac-about_bg dac-rounded-16   dac-color-sky-blue dac-p-40 dac-zoom-in justify-content-between ">
+                <h2 class="dac-color-dark-blue dac-m-0 dac-p-0 dac-fs-32 dac-line-height-40 dac-font-600">
+                    Mission &
+                    Vision
+                </h2>
+                <p class="dac-m-0 dac-p-0 dac-hero-text-paragraph">
+                    Lorem ipsum dolor sit amet consectetur. Sapien arcu
                     malesuada
                     purus arcu. Neque mi arcu nunc velit.
-                    Ipsum congue cursus egestas ullamcorper vestibulum mus. </p>
+                    Ipsum congue cursus egestas ullamcorper vestibulum mus.
+                </p>
             </article>
             <article class="dac-flex-one dac-zoom-in">
-                <img src="./assets/history.png" class="dac-w-100 dac-object-cover dac-h-100" />
+                <img src="./assets/about-history.png" class="dac-w-100 dac-object-cover dac-h-100" />
             </article>
             <article
-                class="dac-flex-one dac-items-end dac-bg_primary dac-vision_card dac-rounded-16 d-flex dac-align-items-end dac-p-40 dac-fs-32 dac-color-sky-blue dac-font-600 dac-line-height-40 dac-bg-primary dac-zoom-in ">
-                <p class="dac-m-0 dac-p-0">Lorem ipsum dolor sit amet consectetur</p>
+                class="dac-flex-one   dac-bg_primary dac-vision_card dac-rounded-16 d-flex   dac-p-40 dac-fs-32 dac-color-sky-blue dac-font-600 dac-line-height-40 dac-bg-primary dac-zoom-in ">
+                <p class="dac-m-0 dac-p-0 dac-self-end ">Lorem ipsum dolor sit amet consectetur</p>
             </article>
         </section>
 
-        <section class="d-flex dac-gap-24 dac-mt-80 dac-flex-wrap" aria-labelledby="why-associations-heading">
+        <section class="dac-section d-flex dac-gap-24 dac-mt-80 dac-flex-wrap"
+            aria-labelledby="why-associations-heading">
             <h2 class="dac-flex-one dac-hero-text-heading" id="why-associations-heading">
                 Strategic Objectives
             </h2>
@@ -217,7 +222,7 @@
             </div>
         </section>
 
-        <section class="dac-mt-80 owl-container" aria-label="Objective 3">
+        <section class="dac-section dac-mt-80 owl-container" aria-label="Objective 3">
             <div class="owl-carousel owl-theme" id="carousel-container">
                 <div
                     class="item d-flex dac-object-container dac-rounded-16  dac-max-width-741 dac-overflow-hidden dac-mh-450">
@@ -275,7 +280,8 @@
 
         </section>
 
-        <section class="dac-trade dac-mt-80 d-flex dac-justify-center align-items-center flex-column dac-gap-40 "
+        <section
+            class="dac-section dac-trade dac-mt-80 d-flex dac-justify-center align-items-center flex-column dac-gap-40 "
             aria-labelledby="trade-entities">
             <div class="dac-trade_title dac-w-760">
                 <h2 class="dac-m-0  dac-hero-text-heading dac-text-center" id="trade-entities">

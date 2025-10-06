@@ -32,6 +32,9 @@ body.dac-body {
   /* padding: 0px 40px; */
 }
 
+.dac-self-end {
+  align-self: end;
+}
 .dac-padding {
   padding: 0px 40px;
 }
@@ -363,7 +366,7 @@ body.dac-body {
   font-weight: 600;
 }
 
-.dac-btn.primary {
+.dac-btn.dac-primary {
   background: var(--color-btn-bg);
   color: var(--color-btn-text);
 }
@@ -649,7 +652,7 @@ a {
   background-image: url("../assets/dubai-buildings.png");
 }
 .dac-bg-membership {
-  background-image: url("../assets/member-banner.png");
+  background-image: url("../assets/members-bg.png");
 }
 .dac-action-cards {
   display: flex;
@@ -1119,6 +1122,10 @@ a {
   object-fit: cover;
   display: block;
 }
+
+.dac-video-container-about {
+  background-image: url(../assets/about-image.png);
+}
 .dac-play-button {
   position: absolute;
   top: 50%;
@@ -1408,7 +1415,7 @@ details p {
     /* padding: 16px 24px; */
   }
   .dac-padding {
-    padding: 16px;
+    padding: 0px;
   }
   .dac-eligibility_overlay {
     height: 348px;
@@ -1490,7 +1497,7 @@ details p {
     /* padding: 0px 16px; */
   }
   body.dac-body {
-    padding: 0px 16px;
+    padding: 16px 16px 0px 16px;
   }
   .dac-events__center {
     height: 470px;
