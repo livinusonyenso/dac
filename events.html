@@ -26,8 +26,8 @@
 <body class="dac-body">
     <a href="#dac-main-content" class="dac-skip-link dac-visually-hidden-focusable">Skip to main content</a>
 
-    <header class="dac-sticky-header d-flex justify-content-between align-items-center py-16 dac-bg-white" role="banner"
-        aria-label="Main site header">
+    <header class="dac-sticky-header d-flex justify-content-between align-items-center py-16 dac-bg-white dac-padding"
+        role="banner" aria-label="Main site header">
         <div class="dac-logo-container d-flex align-items-center dac-gap-12" aria-label="Dubai Association Centre logo">
             <a href="./index.html" class="dac-no-underline">
                 <img src="./assets/dac-logo.svg" alt="Dubai Association Centre logo" class="dac-logo" />
@@ -113,196 +113,10 @@
             aria-label="Login or Register"> Login or Register </a>
     </div>
 
-    <main role="main" id="dac-main-content">
-
-        <!-- <section class="flex gap-24 mt-80 flex-wrap" aria-labelledby="community-heading">
-            <h2 id="community-heading" class="dac-flex-one hero-text-heading">
-                Events
-            </h2>
-
-            <div class="dac-flex-one flex flex-col gap-24">
-                <p class="hero-text-paragraph p-0 m-0">
-                    Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu. Neque mi arcu nunc velit.
-                    Ipsum congue cursus egestas ullamcorper vestibulum mus. Tristique enim risus leo ac vel auctor morbi
-                    mauris. Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu. Neque mi arcu nunc
-                    velit. Ipsum congue cursus egestas ullamcorper vestibulum mus. Tristique enim risus leo ac vel
-                    auctor morbi mauris.
-                </p>
-
-            </div>
-        </section>
+    <main class="dac-padding" role="main" id="dac-main-content">
 
 
-        <section class="mt-80 owl-container" aria-label="Objective 3">
-            <div class="owl-carousel owl-theme" id="owl-carousel-one">
-
-                <div class="item event_card gap-24 overflow-hidden  flex flex-col position-relative ">
-                    <div class="h-470 event_card_img rounded-16 overflow-hidden position-relative cursor-pointer">
-                        <img class="h-100 w-100 object-cover" src="./assets/event-H.E.MattarAlTayer.png"
-                            alt="Event Image">
-                        <div class="tag font-600"><span class="font-900"> DAC </span> Event</div>
-                        <div
-                            class="card-overlay position-absolute flex flex-col justify-center align-items-center flex">
-                            <button class="btn-outline fs-12 font-700 color-white">
-                                <a href="./eventDetails.html" class="no-underline color-white">
-                                    VIEW DETAILS
-                                </a>
-                            </button>
-                            <button class="btn-primary fs-12 font-700">REGISTER NOW</button>
-                        </div>
-                    </div>
-                    <div class="flex flex-col gap-24">
-                        <div class="flex flex-col gap-8">
-                            <div class="font-700 color-foundation-400">22 Feb, 2025</div>
-                            <div class="fs-24 font-600 text-primary">Lorem ipsum dolor sit amet</div>
-                        </div>
-                        <div class="line-height-24 font-400">
-                            Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu.
-                            Neque mi arcu nunc velit.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item event_card gap-24 overflow-hidden  flex flex-col position-relative ">
-                    <div class="h-470 event_card_img rounded-16 overflow-hidden position-relative cursor-pointer">
-                        <img class="h-100 w-100 object-cover" src="./assets/member-banner.png" alt="Event Image">
-                        <div class="tag font-600"><span class="font-900"> Members </span> Event</div>
-                        <div
-                            class="card-overlay position-absolute flex flex-col justify-center align-items-center flex">
-                            <button class="btn-outline fs-12 font-700 color-white">
-                                <a href="./eventDetails.html" class="no-underline color-white">
-                                    VIEW DETAILS
-                                </a>
-                            </button>
-                            <button class="btn-primary fs-12 font-700">REGISTER NOW</button>
-                        </div>
-                    </div>
-                    <div class="flex flex-col gap-24">
-                        <div class="flex flex-col gap-8">
-                            <div class="font-700 color-foundation-400">22 Feb, 2025</div>
-                            <div class="fs-24 font-600 text-primary">Lorem ipsum dolor sit amet</div>
-                        </div>
-                        <div class="line-height-24 font-400">
-                            Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu.
-                            Neque mi arcu nunc velit.
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="action-cards mt-80 gap-24" aria-label="Actions to register or scale your association in Dubai">
-
-            <article class="card dark-card h-360 height-fit-content dac-zoom-in">
-                <div class="card-content p-40">
-                    <h3 class="m-0 p-0 fs-48 color-white line-height-48" aria-label="Event planning support">
-                        Event planning support
-                    </h3>
-                    <p class="m-0 p-0 header-text-paragraph line-height-24 font-400">
-                        Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu. Neque mi arcu nunc
-                        velit. Ipsum congue cursus egestas ullamcorper vestibulum mus.
-                    </p>
-                </div>
-            </article>
-
-            <article class="card image-card  h-360 max-height-360 dac-zoom-in overflow-hidden"
-                aria-label="Scale your association to Dubai, card with background image of Dubai skyline">
-                <img src="./assets/event-planner.png" class="h-100 object-cover w-100" />
-            </article>
-
-        </section>
-
-        <section class="flex gap-24 mt-24 flex-wrap mobile-flex-wrap" aria-labelledby="mission-vision-heading">
-            <article
-                class="color-sky-blue-bg dac-flex-one flex flex-col gap-24 p-40 about_bg rounded-16 justify-between color-sky-blue p-40 dac-zoom-in h-360 ">
-                <h2 class="color-dark-blue m-0 p-0 fs-32 line-height-40 font-600">Venue recommendations</h2>
-                <p class="m-0 p-0 hero-text-paragraph">Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada
-                    purus arcu. Neque mi arcu nunc velit.
-                    Ipsum congue cursus egestas ullamcorper vestibulum mus. </p>
-            </article>
-            <article class="d-flex-one  dac-zoom-in rounded-16 h-360  overflow-hidden">
-                <img src="./assets/professional-ecosystem.png" class="w-100 object-cover h-100" />
-            </article>
-            <article
-                class="d-flex-one flex flex-col bg_primary vision_card rounded-16 flex gap-24  p-40 fs-32 color-sky-blue font-600 line-height-40 bg-primary dac-zoom-in h-360  justify-end">
-                <p class="fs-32 font-600 line-height-48 m-0 p-0">Marketing assistance</p>
-                <p class="font-400 line-height-24 p-0 m-0 fs-16">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, maiores, saepe tempora quidem itaque
-                    exercitationem ut dignissimos facere ratione voluptatem animi doloremque.
-                </p>
-            </article>
-        </section>
-
-        <section class="flex gap-24 mt-80 flex-wrap" aria-labelledby="why-associations-heading">
-            <h2 class="d-flex-one hero-text-heading" id="why-associations-heading">
-                Past Conferences
-            </h2>
-            <div class="d-flex-one flex flex-col gap-24">
-                <p class="m-0 p-0 hero-text-paragraph"
-                    aria-label="Dubai Association Centre provides a formal framework for professional associations to establish a presence in Dubai.">
-                    Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu. Neque mi arcu nunc velit.
-                    Ipsum congue cursus egestas ullamcorper vestibulum mus. Tristique enim risus leo ac vel auctor morbi
-                    mauris. Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu. Neque mi arcu nunc
-                    velit. Ipsum congue cursus egestas..
-                </p>
-            </div>
-        </section>
-
-
-        <section class="mt-80 owl-container" aria-label="Objective 3">
-            <div class="owl-carousel owl-theme" id="owl-carousel-two">
-
-                <div class="item event_card gap-24 overflow-hidden  flex flex-col position-relative ">
-                    <div class="h-470 event_card_img rounded-16 overflow-hidden position-relative cursor-pointer">
-                        <img class="h-100 w-100 object-cover" src="./assets/event-chairman.png" alt="Event Image">
-                        <div class="tag font-600"><span class="font-900"> Members </span> Event</div>
-                        <div
-                            class="card-overlay position-absolute flex flex-col justify-center align-items-center flex">
-                            <button class="btn-outline fs-12 font-700 color-white">VIEW DETAILS</button>
-                            <button class="btn-primary fs-12 font-700">REGISTER NOW</button>
-                        </div>
-                    </div>
-                    <div class="flex flex-col gap-24">
-                        <div class="flex flex-col gap-8">
-                            <div class="font-700 color-foundation-400">22 Feb, 2025</div>
-                            <div class="fs-24 font-600 text-primary">Lorem ipsum dolor sit amet</div>
-                        </div>
-                        <div class="line-height-24 font-400">
-                            Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu.
-                            Neque mi arcu nunc velit.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item event_card gap-24 overflow-hidden  flex flex-col position-relative ">
-                    <div class="h-470 event_card_img rounded-16 overflow-hidden position-relative cursor-pointer">
-                        <img class="h-100 w-100 object-cover" src="./assets/member-banner.png" alt="Event Image">
-                        <div class="tag font-600"><span class="font-900"> Members </span> Event</div>
-                        <div
-                            class="card-overlay position-absolute flex flex-col justify-center align-items-center flex">
-                            <button class="btn-outline fs-12 font-700 color-white">VIEW DETAILS</button>
-                            <button class="btn-primary fs-12 font-700">REGISTER NOW</button>
-                        </div>
-                    </div>
-                    <div class="flex flex-col gap-24">
-                        <div class="flex flex-col gap-8">
-                            <div class="font-700 color-foundation-400">22 Feb, 2025</div>
-                            <div class="fs-24 font-600 text-primary">Lorem ipsum dolor sit amet</div>
-                        </div>
-                        <div class="line-height-24 font-400">
-                            Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu.
-                            Neque mi arcu nunc velit.
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </section> -->
-
-        <section class="d-flex dac-gap-24 dac-mt-80 dac-flex-wrap" aria-labelledby="community-heading">
+        <section class="dac-section d-flex dac-gap-24 dac-mt-80 dac-flex-wrap" aria-labelledby="community-heading">
             <h2 id="community-heading" class="dac-flex-one dac-hero-text-heading">
                 Events
             </h2>
@@ -318,65 +132,118 @@
             </div>
         </section>
 
-        <section class="dac-mt-80 owl-container" aria-label="Objective 3">
-            <div class="owl-carousel owl-theme" id="owl-carousel-one">
-                <div
-                    class="item dac-event_card dac-gap-24 dac-overflow-hidden d-flex flex-column dac-position-relative">
-                    <div
-                        class="dac-h-470 dac-event_card_img dac-rounded-16 dac-overflow-hidden dac-position-relative dac-cursor-pointer">
-                        <img class="dac-h-100 dac-w-100 dac-object-cover" src="./assets/event-H.E.MattarAlTayer.png"
-                            alt="Event Image" />
-                        <div class="dac-tag dac-font-600"><span class="dac-font-900"> DAC </span> Event</div>
-                        <div
-                            class="dac-card-overlay dac-position-absolute d-flex flex-column dac-justify-center dac-align-items-center dac-flex">
-                            <button class="dac-btn-outline dac-fs-12 dac-font-700 dac-color-white">
-                                <a href="./eventDetails.html" class="dac-no-underline dac-color-white">VIEW DETAILS</a>
-                            </button>
-                            <button class="dac-btn-primary dac-fs-12 dac-font-700">REGISTER NOW</button>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column dac-gap-24">
-                        <div class="d-flex flex-column dac-gap-8">
-                            <div class="dac-font-700 dac-color-foundation-400">22 Feb, 2025</div>
-                            <div class="dac-fs-24 dac-font-600 dac-text-primary">Lorem ipsum dolor sit amet</div>
-                        </div>
-                        <div class="dac-line-height-24 dac-font-400">
-                            Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu.
-                            Neque mi arcu nunc velit.
-                        </div>
-                    </div>
-                </div>
+        <div class="d-flex justify-content-center align-items-center w-100 dac-mt-80">
+            <div class="toggle-switch">
+                <button class="toggle-button active" id="dacBtn" data-target="dacEvents">DAC Events</button>
+                <button class="toggle-button" id="memberBtn" data-target="memberEvents">Member Events</button>
+            </div>
+        </div>
 
-                <div
-                    class="item dac-event_card dac-gap-24 dac-overflow-hidden d-flex flex-column dac-position-relative">
+        <section class="dac-section dac-mt-80 owl-container" aria-label="Objective 3">
+            <div id="dacEvents" class="event-section active">
+
+                <div class="owl-carousel owl-theme" id="owl-carousel-one">
                     <div
-                        class="dac-h-470 dac-event_card_img dac-rounded-16 dac-overflow-hidden dac-position-relative dac-cursor-pointer">
-                        <img class="dac-h-100 dac-w-100 dac-object-cover" src="./assets/member-banner.png"
-                            alt="Event Image" />
-                        <div class="dac-tag dac-font-600"><span class="dac-font-900"> Members </span> Event</div>
+                        class="item dac-event_card dac-gap-24 dac-overflow-hidden d-flex flex-column dac-position-relative">
                         <div
-                            class="dac-card-overlay dac-position-absolute d-flex flex-column dac-justify-center dac-align-items-center dac-flex">
-                            <button class="dac-btn-outline dac-fs-12 dac-font-700 dac-color-white">
-                                <a href="./eventDetails.html" class="dac-no-underline dac-color-white">VIEW DETAILS</a>
-                            </button>
-                            <button class="dac-btn-primary dac-fs-12 dac-font-700">REGISTER NOW</button>
+                            class="dac-h-470 dac-event_card_img dac-rounded-16 dac-overflow-hidden dac-position-relative dac-cursor-pointer">
+                            <img class="dac-h-100 dac-w-100 dac-object-cover" src="./assets/event-H.E.MattarAlTayer.png"
+                                alt="Event Image" />
+                            <div class="dac-tag dac-font-600"><span class="dac-font-900"> DAC </span> Event</div>
+                            <div
+                                class="dac-card-overlay dac-position-absolute d-flex flex-column dac-justify-center dac-align-items-center dac-flex">
+                                <button class="dac-btn-outline dac-fs-12 dac-font-700 dac-color-white">
+                                    <a href="./eventDetails.html" class="dac-no-underline dac-color-white">VIEW
+                                        DETAILS</a>
+                                </button>
+                                <button class="dac-btn-primary dac-fs-12 dac-font-700">REGISTER NOW</button>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column dac-gap-24">
+                            <div class="d-flex flex-column dac-gap-8">
+                                <div class="dac-font-700 dac-color-foundation-400">22 Feb, 2025</div>
+                                <div class="dac-fs-24 dac-font-600 dac-text-primary">Lorem ipsum dolor sit amet</div>
+                            </div>
+                            <div class="dac-line-height-24 dac-font-400">
+                                Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu.
+                                Neque mi arcu nunc velit.
+                            </div>
                         </div>
                     </div>
-                    <div class="d-flex flex-column dac-gap-24">
-                        <div class="d-flex flex-column dac-gap-8">
-                            <div class="dac-font-700 dac-color-foundation-400">22 Feb, 2025</div>
-                            <div class="dac-fs-24 dac-font-600 dac-text-primary">Lorem ipsum dolor sit amet</div>
+
+                    <div
+                        class="item dac-event_card dac-gap-24 dac-overflow-hidden d-flex flex-column dac-position-relative">
+                        <div
+                            class="dac-h-470 dac-event_card_img dac-rounded-16 dac-overflow-hidden dac-position-relative dac-cursor-pointer">
+                            <img class="dac-h-100 dac-w-100 dac-object-cover" src="./assets/member-banner.png"
+                                alt="Event Image" />
+                            <div class="dac-tag dac-font-600"><span class="dac-font-900"> Members </span> Event</div>
+                            <div
+                                class="dac-card-overlay dac-position-absolute d-flex flex-column dac-justify-center dac-align-items-center dac-flex">
+                                <button class="dac-btn-outline dac-fs-12 dac-font-700 dac-color-white">
+                                    <a href="./eventDetails.html" class="dac-no-underline dac-color-white">VIEW
+                                        DETAILS</a>
+                                </button>
+                                <button class="dac-btn-primary dac-fs-12 dac-font-700">REGISTER NOW</button>
+                            </div>
                         </div>
-                        <div class="dac-line-height-24 dac-font-400">
-                            Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu.
-                            Neque mi arcu nunc velit.
+                        <div class="d-flex flex-column dac-gap-24">
+                            <div class="d-flex flex-column dac-gap-8">
+                                <div class="dac-font-700 dac-color-foundation-400">22 Feb, 2025</div>
+                                <div class="dac-fs-24 dac-font-600 dac-text-primary">Lorem ipsum dolor sit amet</div>
+                            </div>
+                            <div class="dac-line-height-24 dac-font-400">
+                                Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu.
+                                Neque mi arcu nunc velit.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div id="memberEvents" class="event-section">
+
+                <div class="events-container">
+
+                    <div class="event-item d-flex dac-gap-24 dac-flex-wrap">
+                        <div class="d-flex align-items-baseline dac-mw-213">
+                            <div class="event-date mr-3">22 Feb, 2025</div>
+                        </div>
+
+                        <div class="d-flex flex-column dac-gap-24">
+                            <div class="event-title">Event Name 1</div>
+                            <p class="event-description">
+                                Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu.
+                                Neque mi arcu nunc velit. Ipsum congue cursus egestas ullamcorper vestibulum mus.
+                                Tristique enim risus leo ac vel auctor morbi mauris. Lorem ipsum dolor sit amet
+                                consectetur.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="event-item d-flex dac-gap-24 dac-flex-wrap">
+                        <div class="d-flex align-items-baseline dac-mw-213">
+                            <div class="event-date mr-3">22 Feb, 2025</div>
+                        </div>
+
+                        <div class="d-flex flex-column dac-gap-24">
+                            <div class="event-title">Event Name 1</div>
+                            <p class="event-description">
+                                Lorem ipsum dolor sit amet consectetur. Sapien arcu malesuada purus arcu.
+                                Neque mi arcu nunc velit. Ipsum congue cursus egestas ullamcorper vestibulum mus.
+                                Tristique enim risus leo ac vel auctor morbi mauris. Lorem ipsum dolor sit amet
+                                consectetur.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
         </section>
 
-        <section class="dac-action-cards dac-mt-80 dac-gap-24"
+        <section class="dac-section dac-action-cards dac-mt-80 dac-gap-24"
             aria-label="Actions to register or scale your association in Dubai">
             <article class="dac-card dac-dark-card dac-h-360 dac-height-fit-content dac-zoom-in">
                 <div class="dac-card-content dac-p-40">
@@ -397,7 +264,7 @@
             </article>
         </section>
 
-        <section class="d-flex dac-gap-24 dac-mt-24 dac-flex-wrap dac-mobile-flex-wrap"
+        <section class="dac-section d-flex dac-gap-24 dac-mt-24 dac-flex-wrap dac-mobile-flex-wrap"
             aria-labelledby="mission-vision-heading">
             <article
                 class="dac-color-sky-blue-bg dac-flex-one d-flex flex-column dac-gap-24 dac-p-40 dac-about_bg dac-rounded-16 justify-content-between dac-color-sky-blue dac-p-40 dac-zoom-in dac-h-360">
@@ -421,7 +288,8 @@
             </article>
         </section>
 
-        <section class="d-flex dac-gap-24 dac-mt-80 dac-flex-wrap" aria-labelledby="why-associations-heading">
+        <section class="dac-section d-flex dac-gap-24 dac-mt-80 dac-flex-wrap"
+            aria-labelledby="why-associations-heading">
             <h2 class="dac-flex-one dac-hero-text-heading" id="why-associations-heading">
                 Past Conferences
             </h2>
@@ -436,7 +304,7 @@
             </div>
         </section>
 
-        <section class="dac-mt-80 owl-container" aria-label="Objective 3">
+        <section class="dac-section dac-mt-80 owl-container" aria-label="Objective 3">
             <div class="owl-carousel owl-theme" id="owl-carousel-two">
                 <div
                     class="item dac-event_card dac-gap-24 dac-overflow-hidden d-flex flex-column dac-position-relative">

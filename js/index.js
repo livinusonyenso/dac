@@ -57,6 +57,14 @@ const mobileMenu = document.getElementById("mobileMenu");
 const closeButton = document.querySelector(".dac-menu-close");
 header.classList.remove("hide");
 
+// const dacBtn = document.getElementById("dacBtn");
+// const memberBtn = document.getElementById("memberBtn");
+// const dacEvents = document.getElementById("dacEvents");
+// const memberEvents = document.getElementById("memberEvents");
+
+const buttons = document.querySelectorAll(".toggle-button");
+const sections = document.querySelectorAll(".event-section");
+
 document.addEventListener("DOMContentLoaded", () => {
   //   Initialize Owl Carousel
   handleOWLcarous("#carousel-container", owlCarouselConfig_one_and_Half_Box);
@@ -172,6 +180,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("resize", updateParallax);
   updateParallax();
+
+  // dacBtn.addEventListener("click", function () {
+  //   dacBtn.classList.add("active");
+  //   memberBtn.classList.remove("active");
+  //   dacEvents.classList.add("active");
+  //   memberEvents.classList.remove("active");
+  // });
+
+  // memberBtn.addEventListener("click", function () {
+  //   memberBtn.classList.add("active");
+  //   dacBtn.classList.remove("active");
+  //   memberEvents.classList.add("active");
+  //   dacEvents.classList.remove("active");
+  // });
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      // Remove active class from all buttons and sections
+      buttons.forEach((b) => b.classList.remove("active"));
+      sections.forEach((s) => s.classList.remove("active"));
+
+      // Add active class to clicked button
+      btn.classList.add("active");
+
+      // Show matching section
+      const targetId = btn.getAttribute("data-target");
+      document.getElementById(targetId).classList.add("active");
+      resetOWL();
+    });
+  });
 });
 
 function updateParallax() {
@@ -257,6 +295,12 @@ const countdown = () => {
       "0"
     );
   }
+};
+
+const resetOWL = () => {
+  handleOWLcarous("#carousel-container", owlCarouselConfig_one_and_Half_Box);
+  handleOWLcarous("#owl-carousel-one", owlConfig_two_and_half_box);
+  handleOWLcarous("#owl-carousel-two", owlConfig_two_and_half_box);
 };
 
 const timer = setInterval(countdown, 1000);

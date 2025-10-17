@@ -22,425 +22,439 @@
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<body class="dac-body">
-    <a href="#dac-main-content" class="dac-skip-link dac-visually-hidden-focusable">Skip to main content</a>
+<body>
+    <section class="dac-body">
 
-    <header class="dac-sticky-header d-flex justify-content-between align-items-center py-16 dac-bg-white dac-padding" role="banner"
-        aria-label="Main site header">
-        <div class="dac-logo-container d-flex align-items-center dac-gap-12" aria-label="Dubai Association Centre logo">
-            <a href="./index.html" class="dac-no-underline">
-                <img src="./assets/dac-logo.svg" alt="Dubai Association Centre logo" class="dac-logo" />
-            </a>
-        </div>
+        <a href="#dac-main-content" class="dac-skip-link dac-visually-hidden-focusable">Skip to main content</a>
 
-        <nav class="dac-main-nav d-flex dac-gap-32 align-items-center dac-fs-14 dac-uppercase dac-ls-005 dac-display-none-on-mobile"
-            aria-label="Main navigation">
-            <a href="./about.html"
-                class="dac-no-underline dac-text-primary dac-font-barlow dac-fs-10 dac-font-500 dac-ls-08 dac-uppercase"
-                aria-label="About DAC"> About DAC </a>
-            <a href="./becomeMember.html"
-                class="dac-no-underline dac-text-primary dac-font-barlow dac-fs-10 dac-font-500 dac-ls-08 dac-uppercase"
-                aria-label="Become a Member"> Become a Member </a>
-            <a href="./licenseRenewal.html"
-                class="dac-no-underline dac-text-primary dac-font-barlow dac-fs-10 dac-font-500 dac-ls-08 dac-uppercase"
-                aria-label="License Renewal"> License Renewal </a>
-            <a href="./events.html"
-                class="dac-no-underline dac-text-secondary dac-font-barlow dac-fs-10 dac-font-600 dac-ls-08 dac-uppercase dac-active"
-                aria-current="page" aria-label="Events"> Events </a>
-            <a href="./dacConferences.html"
-                class="dac-no-underline dac-text-secondary dac-font-barlow dac-fs-10 dac-font-600 dac-ls-08 dac-uppercase dac-active"
-                aria-current="page" aria-label="Conferences"> Conferences </a>
-            <div class="dac-header-buttons d-flex dac-gap-16 align-items-center" aria-label="Header action buttons">
-                <a href="./contactUs.html"
-                    class="dac-btn dac-primary d-flex dac-px-16 dac-py-8 dac-rounded-32 dac-font-barlow dac-fs-10 dac-font-700 dac-uppercase dac-gap-10 dac-text-center dac-white-space-nowrap dac-no-underline"
-                    aria-label="Get in Touch"> Get in Touch </a>
-                <a href="#"
-                    class="dac-btn dac-outline d-flex dac-px-16 dac-py-8 dac-rounded-32 dac-font-barlow dac-fs-10 dac-font-700 dac-uppercase dac-gap-10 dac-text-primary dac-text-center dac-white-space-nowrap dac-no-underline"
-                    aria-label="Login or Register"> Login or Register </a>
-            </div>
-        </nav>
-
-        <div class="dac-mobile-hambuger dac-display-none-on-desktop" aria-label="Open mobile menu" role="button"
-            tabindex="0" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobileMenu"
-            id="hamburgerBtn">
-            <img src="./assets/hamburger-icon.svg" alt="Hamburger menu icon" class="dac-hamburger-icon" />
-        </div>
-
-        <nav class="dac-mobile-menu" id="mobileMenu" aria-label="Mobile navigation" role="navigation"
-            aria-hidden="true">
-            <div class="dac-menu-header">
-                <div class="dac-menu-close" aria-label="Close menu" role="button" tabindex="0">✕</div>
-            </div>
-            <ul class="dac-menu-list">
-                <li> <a class="dac-hero-text-paragraph dac-text-decoration-none dac-color-white" href="./about.html">
-                        About
-                    </a>
-                </li>
-                <li>
-                    <a class="dac-hero-text-paragraph dac-text-decoration-none dac-color-white"
-                        href="./becomeMember.html">
-                        Become a Member
-                    </a>
-                </li>
-                <li><a class="dac-hero-text-paragraph dac-text-decoration-none dac-color-white"
-                        href="./licenseRenewal.html">
-                        License Renewal
-                    </a>
-                </li>
-                <li>
-                    <a class="dac-hero-text-paragraph dac-text-decoration-none dac-color-white" href="./events.html">
-                        Events
-                    </a>
-                </li>
-                <li>
-                    <a class="dac-hero-text-paragraph dac-text-decoration-none dac-color-white"
-                        href="./dacConferences.html">
-                        Conferences
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="dac-header-buttons d-flex dac-gap-16 align-items-center justify-content-center dac-display-none-on-desktop-flex dac-mt-40 dac-p-8"
-        aria-label="Header action buttons">
-        <a href="./contactUs.html"
-            class="dac-btn dac-primary d-flex dac-px-16 dac-py-8 dac-rounded-32 dac-font-barlow dac-fs-10 dac-font-700 dac-uppercase dac-gap-10 dac-text-center dac-white-space-nowrap dac-no-underline dac-flex-one justify-content-center"
-            aria-label="Get in Touch"> Get in Touch </a>
-        <a href="#"
-            class="dac-btn dac-outline d-flex dac-px-16 dac-py-8 dac-rounded-32 dac-font-barlow dac-fs-10 dac-font-700 dac-uppercase dac-gap-10 dac-text-primary dac-text-center dac-white-space-nowrap dac-no-underline dac-flex-one justify-content-center"
-            aria-label="Login or Register"> Login or Register </a>
-    </div>
-
-    <main class="dac-padding" role="main" id="dac-main-content">
-        <section class="dac-section dac-hero-section" aria-labelledby="hero-heading">
-            <div class="dac-hero-left dac-mw-460 d-flex flex-column dac-gap-24" role="region">
-                <h2 id="hero-heading" class="dac-hero-text-heading">
-                    Dubai welcomes your association.
-                </h2>
-
-                <p class="dac-hero-text-paragraph dac-m-0">
-                    At Dubai Association Centre, we support international and regional associations in
-                    establishing their presence in Dubai.
-                </p>
-
-                <a href="#" class="dac-btn dac-outline" role="button"
-                    aria-label="Become a Member at Dubai Association Centre">
-                    Become a Member
+        <header
+            class="dac-sticky-header d-flex justify-content-between align-items-center py-16 dac-bg-white dac-padding"
+            role="banner" aria-label="Main site header">
+            <div class="dac-logo-container d-flex align-items-center dac-gap-12"
+                aria-label="Dubai Association Centre logo">
+                <a href="./index.html" class="dac-no-underline">
+                    <img src="./assets/dac-logo.svg" alt="Dubai Association Centre logo" class="dac-logo" />
                 </a>
             </div>
 
-            <div class="dac-hero-right">
-                <div class="dac-main-image-container">
-                    <img src="./assets/uae-smile.png" alt="Smiling Emirati man in kandura welcoming association members"
-                        class="dac-main-image" />
+            <nav class="dac-main-nav d-flex dac-gap-32 align-items-center dac-fs-14 dac-uppercase dac-ls-005 dac-display-none-on-mobile"
+                aria-label="Main navigation">
+                <a href="./about.html"
+                    class="dac-no-underline dac-text-primary dac-font-barlow dac-fs-10 dac-font-500 dac-ls-08 dac-uppercase"
+                    aria-label="About DAC"> About DAC </a>
+                <a href="./becomeMember.html"
+                    class="dac-no-underline dac-text-primary dac-font-barlow dac-fs-10 dac-font-500 dac-ls-08 dac-uppercase"
+                    aria-label="Become a Member"> Become a Member </a>
+                <a href="./licenseRenewal.html"
+                    class="dac-no-underline dac-text-primary dac-font-barlow dac-fs-10 dac-font-500 dac-ls-08 dac-uppercase"
+                    aria-label="License Renewal"> License Renewal </a>
+                <a href="./events.html"
+                    class="dac-no-underline dac-text-secondary dac-font-barlow dac-fs-10 dac-font-600 dac-ls-08 dac-uppercase dac-active"
+                    aria-current="page" aria-label="Events"> Events </a>
+                <a href="./dacConferences.html"
+                    class="dac-no-underline dac-text-secondary dac-font-barlow dac-fs-10 dac-font-600 dac-ls-08 dac-uppercase dac-active"
+                    aria-current="page" aria-label="Conferences"> Conferences </a>
+                <div class="dac-header-buttons d-flex dac-gap-16 align-items-center" aria-label="Header action buttons">
+                    <a href="./contactUs.html"
+                        class="dac-btn dac-primary d-flex dac-px-16 dac-py-8 dac-rounded-32 dac-font-barlow dac-fs-10 dac-font-700 dac-uppercase dac-gap-10 dac-text-center dac-white-space-nowrap dac-no-underline"
+                        aria-label="Get in Touch"> Get in Touch </a>
+                    <a href="#"
+                        class="dac-btn dac-outline d-flex dac-px-16 dac-py-8 dac-rounded-32 dac-font-barlow dac-fs-10 dac-font-700 dac-uppercase dac-gap-10 dac-text-primary dac-text-center dac-white-space-nowrap dac-no-underline"
+                        aria-label="Login or Register"> Login or Register </a>
                 </div>
-
-                <div class="dac-info-boxes" role="group" aria-label="Association statistics and support">
-                    <div class="dac-info-card dac-light d-flex flex-column dac-gap-10 ">
-                        <strong aria-label="Over seventy associations registered">70+</strong>
-                        <span>Associations Registered</span>
-                    </div>
-
-                    <div class="dac-info-card dac-dark">
-                        Supporting associations across trade, science, health, and education sectors.
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="dac-section d-flex dac-gap-24 dac-mt-80 dac-flex-wrap" aria-labelledby="community-heading">
-            <h2 id="community-heading" class="dac-flex-one dac-hero-text-heading">
-                Shaping Dubai's professional community
-            </h2>
-
-            <div class="dac-flex-one d-flex flex-column dac-gap-24">
-                <p class="dac-hero-text-paragraph dac-m-0">
-                    Dubai Association Centre (DAC) provides a formal framework for professional associations to
-                    establish a presence in Dubai. Facilitating licensing and operational support, DAC is jointly
-                    established by Dubai Chambers, Dubai Department of Economy and Tourism, and Dubai World Trade
-                    Centre.
-                </p>
-
-                <a href="#" class="dac-btn dac-outline" role="button"
-                    aria-label="Learn more about Dubai Association Centre">
-                    About us
-                </a>
-            </div>
-        </section>
-
-        <section class="dac-section dac-action-cards dac-mt-80" aria-label="Actions to register or scale your association in Dubai">
-
-            <article class="dac-card dac-zoom-in dac-card-first-img">
-                <div class="dac-card-content">
-                    <h3>
-                        <a href="#" class="dac-text-decoration-none dac-text-white"
-                            aria-label="Register your association in Dubai, open link">
-                            Register Your Association In Dubai
-                        </a>
-                    </h3>
-                    <span class="dac-arrow-icon" aria-hidden="true">
-                        <img src="./assets/card-arrow.svg" role="presentation" alt="" />
-                    </span>
-                </div>
-            </article>
-
-            <article class="dac-card dac-image-card dac-zoom-in dac-card-second-img"
-                aria-label="Scale your association to Dubai, card with background image of Dubai skyline">
-                <div class="dac-card-content">
-                    <h3>
-                        <a href="#" class="dac-text-decoration-none dac-text-white"
-                            aria-label="Scale your association to Dubai, open link">
-                            Scale Your Association To Dubai
-                        </a>
-                    </h3>
-                    <span class="dac-arrow-icon" aria-hidden="true">
-                        <img src="./assets/card-arrow.svg" role="presentation" alt="" />
-                    </span>
-                </div>
-            </article>
-
-        </section>
-
-        <section class="dac-section d-flex dac-gap-24 dac-mt-80 dac-flex-wrap" aria-labelledby="why-associations-heading">
-            <h2 class="dac-flex-one dac-hero-text-heading" id="why-associations-heading">
-                Why associations choose Dubai
-            </h2>
-            <div class="dac-flex-one">
-                <p class="dac-hero-text-paragraph"
-                    aria-label="Dubai Association Centre provides a formal framework for professional associations to establish a presence in Dubai.">
-                    Dubai Association Centre (DAC) provides a formal framework for professional associations to
-                    establish a
-                    presence in Dubai. Facilitating licensing and operational support, DAC is jointly established by
-                    Dubai
-                    Chambers, Dubai Department of Economy and Tourism, and Dubai World Trade Centre.
-                </p>
-            </div>
-        </section>
-
-        <section class="dac-section dac-container dac-mt-80" aria-label="Key benefits of establishing in Dubai">
-
-            <article class="dac-professional-card  dac-gap-16 " aria-labelledby="card-title-1">
-                <div class="dac-rounded-16 dac-height-289 dac-overflow-hidden">
-                    <img class="dac-parralex-effect" src="./assets/dubai-skyline.png"
-                        alt="Dubai skyline representing strategic global access">
-                </div>
-                <div class="dac-professional-card-content d-flex flex-column dac-gap-16">
-                    <h3 id="card-title-1" class="dac-m-0">Strategic Global Access</h3>
-                    <p class="dac-m-0 dac-hero-text-paragraph">
-                        Dubai's central location connects East and West, offering global reach.
-                    </p>
-                </div>
-            </article>
-
-            <article class="dac-professional-card  dac-gap-16 " aria-labelledby="card-title-2">
-                <div class="dac-rounded-16 dac-height-289 dac-overflow-hidden">
-                    <img class="dac-parralex-effect" src="./assets/professional-ecosystem.png"
-                        alt="Illustration of Dubai's professional ecosystem">
-                </div>
-                <div class="dac-professional-card-content d-flex flex-column dac-gap-16">
-                    <h3 id="card-title-2" class="dac-m-0">Professional Ecosystem</h3>
-                    <p class="dac-m-0 dac-hero-text-paragraph">
-                        Access to Dubai's robust professional and trade community.
-                    </p>
-                </div>
-            </article>
-
-            <article class="dac-professional-card  dac-gap-16 " aria-labelledby="card-title-3">
-                <div class="dac-rounded-16 dac-height-289 dac-overflow-hidden">
-                    <img class="dac-parralex-effect" src="./assets/modern-infrastructure.png"
-                        alt="Modern infrastructure facilities in Dubai">
-                </div>
-                <div class="dac-professional-card-content d-flex flex-column dac-gap-16">
-                    <h3 id="card-title-3" class="dac-m-0">Modern Infrastructure</h3>
-                    <p class="dac-m-0 dac-hero-text-paragraph">
-                        World-class venues and facilities for meetings, events, and networking.
-                    </p>
-                </div>
-            </article>
-
-            <article class="dac-professional-card  dac-gap-16 " aria-labelledby="card-title-4">
-                <div class="dac-rounded-16 dac-height-289 dac-overflow-hidden">
-                    <img class="dac-parralex-effect" src="./assets/simplified-licensing.png"
-                        alt="Simplified licensing illustration">
-                </div>
-                <div class="dac-professional-card-content d-flex flex-column dac-gap-16">
-                    <h3 id="card-title-4" class="dac-m-0">Simplified Licensing</h3>
-                    <p class="dac-m-0 dac-hero-text-paragraph">
-                        One-stop support for association setup, licensing, and compliance.
-                    </p>
-                </div>
-            </article>
-
-        </section>
-
-        <section class="dac-section dac-eligibilitySection dac-mt-80" aria-label="Membership registration process">
-
-            <div class="d-flex dac-gap-24 dac-mobile-flex-wrap">
-
-                <ol class="dac-steps dac-m-0" aria-label="Steps to become a member">
-                    <li class="dac-step">
-                        <div class="dac-step_number" aria-hidden="true">1</div>
-                        <p class="dac-m-0 dac-step_text">Check Eligibility</p>
-                    </li>
-                    <div class="dac-step-spacer"></div>
-                    <li class="dac-step">
-                        <div class="dac-step_number" aria-hidden="true">2</div>
-                        <p class="dac-m-0 dac-step_text">Submit documents to DAC for review</p>
-                    </li>
-                    <div class="dac-step-spacer"></div>
-                    <li class="dac-step">
-                        <div class="dac-step_number" aria-hidden="true">3</div>
-                        <p class="dac-m-0 dac-step_text">Join a thriving community</p>
-                    </li>
-                </ol>
-
-                <div class="dac-eligibility_overlay dac-zoom-in ">
-                    <h2 class="dac-m-0">Get Started</h2>
-                    <button class="dac-btn dac-outline" aria-label="Become a member at Dubai Association Centre">
-                        Become a Member
-                    </button>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="dac-section dac-events dac-mt-120 dac-mobile-flex-wrap dac-mh-540"
-            aria-label="Upcoming events and conferences">
-
-            <div class="dac-events__left dac-flex-one">
-                <h2 class="dac-events__title dac-hero-text-heading dac-text-end">
-                    Fostering <br>
-                    professional <br>
-                    exchange and <br>
-                    organizational <br>
-                    growth.
-                </h2>
-            </div>
-
-            <div class="dac-events__center dac-transition-Y dac-flex-one">
-                <article id="card1" class="dac-events_card dac-card--stacked dac-active"
-                    aria-labelledby="event-title-2025">
-                    <h3 id="event-title-2025" class="dac-card__title dac-text-heading-md dac-m-0">
-                        Dubai Association Conference 2025
-                    </h3>
-                    <img src="./assets/card-event-img.png"
-                        alt="Attendees networking at Dubai Association Conference 2025" class="dac-card__image" />
-                    <p class="dac-m-0 dac-card__date" aria-label="Event Date: July 2025">JULY 2025</p>
-                    <p class="dac-m-0 dac-card__description">
-                        A premier gathering highlighting the pivotal role of associations in
-                        driving change and innovation.
-                    </p>
-                    <a href="#" class="dac-card__link" aria-label="Learn more about Dubai Association Conference 2025">
-                        <span class="dac-card__icon" aria-hidden="true">
-                            <img src="./assets/card-arrow.svg" role="presentation" alt="" />
-                        </span>
-                    </a>
-                </article>
-
-                <article id="card2" class="dac-events_card dac-card--stacked" aria-labelledby="event-title-2026">
-                    <h3 id="event-title-2026" class="dac-card__title dac-text-heading-md dac-m-0">
-                        Announcing next Dubai Conference
-                    </h3>
-                    <img src="./assets/dubai-skyline.png"
-                        alt="Attendees networking at Dubai Association Conference 2026" class="dac-card__image" />
-                    <p class="dac-m-0 dac-card__date" aria-label="Event Date: July 2026">DEC 2026</p>
-                    <p class="dac-m-0 dac-card__description">
-                        Another major gathering showcasing the future of associations and innovation.
-                    </p>
-                    <a href="#" class="dac-card__link" aria-label="Learn more about Dubai Association Conference 2026">
-                        <span class="dac-card__icon" aria-hidden="true">
-                            <img src="./assets/card-arrow.svg" role="presentation" alt="" />
-                        </span>
-                    </a>
-                </article>
-            </div>
-
-            <div class="dac-events__right dac-flex-one">
-                <p class="dac-m-0 dac-events__description">
-                    As a DAC member, your association gains exclusive access to networking events,
-                    workshops, and industry forums. Engage with other associations, share knowledge,
-                    and explore new collaboration opportunities that help drive your mission forward.
-                </p>
-                <a href="#" class="dac-btn dac-outline"
-                    aria-label="View all upcoming events at Dubai Association Centre">
-                    View All Events
-                </a>
-            </div>
-
-        </section>
-
-        <footer class="dac-footer dac-mt-80" role="contentinfo" aria-label="Dubai Association Centre footer">
-            <img src="./assets/footer-logo-bg.png" alt="Dubai Association Centre Logo" />
-            <div class="dac-footer__logo-info" aria-label="Footer logo and contact information">
-                <div class="dac-footer__info">
-                    <p class="dac-cursor-pointer dac-m-0 dac-text-paragraph-sm dac-color-off-white">Dubai Association
-                        Centre</p>
-                    <p class="dac-cursor-pointer dac-m-0 dac-text-paragraph-sm dac-color-off-white">Sheikh Zayed Road,
-                        Dubai</p>
-                    <p class="dac-cursor-pointer dac-m-0 dac-text-paragraph-sm dac-color-off-white">
-                        Info@dubaichamberinternational.com
-                    </p>
-                    <p class="dac-cursor-pointer dac-m-0 dac-text-paragraph-sm dac-color-off-white">+971-XXX-XXXX</p>
-                </div>
-            </div>
-            <nav class="dac-footer__links" aria-label="Footer navigation">
-                <ul class="dac-m-0 dac-p-0 d-flex flex-column dac-gap-4">
-                    <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
-                            class="dac-text-decoration-none dac-color-black" href="./about.html"
-                            referrerpolicy="no-referrer">About DAC</a></li>
-                    <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
-                            class="dac-text-decoration-none dac-color-black" href="./becomeMember.html"
-                            referrerpolicy="no-referrer"> Become A Member </a> </li>
-                    <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
-                            class="dac-text-decoration-none dac-color-black" href="./licenseRenewal.html"
-                            referrerpolicy="no-referrer"> Licensing Renewal</a> </li>
-                    <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
-                            class="dac-text-decoration-none dac-color-black" href="./events.html"
-                            referrerpolicy="no-referrer">Events </a> </li>
-                    <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
-                            class="dac-text-decoration-none dac-color-black" href="./dacConferences.html"
-                            referrerpolicy="no-referrer"> Conferences</a> </li>
-                    <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
-                            class="dac-text-decoration-none dac-color-black" href="./contactUs.html"
-                            referrerpolicy="no-referrer"> Get In Touch</a> </li>
-                    <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
-                            class="dac-text-decoration-none dac-color-black" href="./faq.html"
-                            referrerpolicy="no-referrer">
-                            Frequently Asked Questions </a> </li>
-                </ul>
-            </nav>
-            <nav class="dac-footer__links" aria-label="Legal links">
-                <ul class="dac-m-0 dac-p-0 d-flex flex-column dac-gap-4">
-                    <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
-                            class="dac-text-decoration-none dac-color-black" href="#" referrerpolicy="no-referrer">
-                            Terms &
-                            Conditions </a> </li>
-                    <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
-                            class="dac-text-decoration-none dac-color-black" href="#" referrerpolicy="no-referrer">
-                            Privacy
-                            Policy </a> </li>
-                </ul>
             </nav>
 
-            <div class="dac-footer__social" aria-label="Follow us on social media">
-                <a href="#" aria-label="LinkedIn">
-                    <img src="./assets/linkedin.svg" role="presentation" alt="LinkedIn icon" />
-                </a>
-                <a href="#" aria-label="Facebook">
-                    <img src="./assets/facebook.svg" role="presentation" alt="Facebook icon" />
-                </a>
-                <a href="#" aria-label="Twitter/X">
-                    <img src="./assets/twitter.svg" role="presentation" alt="Twitter icon" />
-                </a>
-                <a href="#" aria-label="YouTube">
-                    <img src="./assets/youtube.svg" role="presentation" alt="YouTube icon" />
-                </a>
+            <div class="dac-mobile-hambuger dac-display-none-on-desktop" aria-label="Open mobile menu" role="button"
+                tabindex="0" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobileMenu"
+                id="hamburgerBtn">
+                <img src="./assets/hamburger-icon.svg" alt="Hamburger menu icon" class="dac-hamburger-icon" />
             </div>
-        </footer>
-        
-    </main>
+
+            <nav class="dac-mobile-menu" id="mobileMenu" aria-label="Mobile navigation" role="navigation"
+                aria-hidden="true">
+                <div class="dac-menu-header">
+                    <div class="dac-menu-close" aria-label="Close menu" role="button" tabindex="0">✕</div>
+                </div>
+                <ul class="dac-menu-list">
+                    <li> <a class="dac-hero-text-paragraph dac-text-decoration-none dac-color-white"
+                            href="./about.html">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dac-hero-text-paragraph dac-text-decoration-none dac-color-white"
+                            href="./becomeMember.html">
+                            Become a Member
+                        </a>
+                    </li>
+                    <li><a class="dac-hero-text-paragraph dac-text-decoration-none dac-color-white"
+                            href="./licenseRenewal.html">
+                            License Renewal
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dac-hero-text-paragraph dac-text-decoration-none dac-color-white"
+                            href="./events.html">
+                            Events
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dac-hero-text-paragraph dac-text-decoration-none dac-color-white"
+                            href="./dacConferences.html">
+                            Conferences
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="dac-header-buttons d-flex dac-gap-16 align-items-center justify-content-center dac-display-none-on-desktop-flex dac-mt-40 dac-p-8"
+            aria-label="Header action buttons">
+            <a href="./contactUs.html"
+                class="dac-btn dac-primary d-flex dac-px-16 dac-py-8 dac-rounded-32 dac-font-barlow dac-fs-10 dac-font-700 dac-uppercase dac-gap-10 dac-text-center dac-white-space-nowrap dac-no-underline dac-flex-one justify-content-center"
+                aria-label="Get in Touch"> Get in Touch </a>
+            <a href="#"
+                class="dac-btn dac-outline d-flex dac-px-16 dac-py-8 dac-rounded-32 dac-font-barlow dac-fs-10 dac-font-700 dac-uppercase dac-gap-10 dac-text-primary dac-text-center dac-white-space-nowrap dac-no-underline dac-flex-one justify-content-center"
+                aria-label="Login or Register"> Login or Register </a>
+        </div>
+
+        <main class="dac-padding" role="main" id="dac-main-content">
+            <section class="dac-section dac-hero-section" aria-labelledby="hero-heading">
+                <div class="dac-hero-left dac-mw-460 d-flex flex-column dac-gap-24" role="region">
+                    <h2 id="hero-heading" class="dac-hero-text-heading">
+                        Dubai welcomes your association.
+                    </h2>
+
+                    <p class="dac-hero-text-paragraph dac-m-0">
+                        At Dubai Association Centre, we support international and regional associations in
+                        establishing their presence in Dubai.
+                    </p>
+
+                    <a href="#" class="dac-btn dac-outline" role="button"
+                        aria-label="Become a Member at Dubai Association Centre">
+                        Become a Member
+                    </a>
+                </div>
+
+                <div class="dac-hero-right">
+                    <div class="dac-main-image-container">
+                        <img src="./assets/uae-smile.png"
+                            alt="Smiling Emirati man in kandura welcoming association members" class="dac-main-image" />
+                    </div>
+
+                    <div class="dac-info-boxes" role="group" aria-label="Association statistics and support">
+                        <div class="dac-info-card dac-light d-flex flex-column dac-gap-10 ">
+                            <strong aria-label="Over seventy associations registered">70+</strong>
+                            <span>Associations Registered</span>
+                        </div>
+
+                        <div class="dac-info-card dac-dark">
+                            Supporting associations across trade, science, health, and education sectors.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dac-section d-flex dac-gap-24 dac-mt-80 dac-flex-wrap" aria-labelledby="community-heading">
+                <h2 id="community-heading" class="dac-flex-one dac-hero-text-heading">
+                    Shaping Dubai's professional community
+                </h2>
+
+                <div class="dac-flex-one d-flex flex-column dac-gap-24">
+                    <p class="dac-hero-text-paragraph dac-m-0">
+                        Dubai Association Centre (DAC) provides a formal framework for professional associations to
+                        establish a presence in Dubai. Facilitating licensing and operational support, DAC is jointly
+                        established by Dubai Chambers, Dubai Department of Economy and Tourism, and Dubai World Trade
+                        Centre.
+                    </p>
+
+                    <a href="#" class="dac-btn dac-outline" role="button"
+                        aria-label="Learn more about Dubai Association Centre">
+                        About us
+                    </a>
+                </div>
+            </section>
+
+            <section class="dac-section dac-action-cards dac-mt-80"
+                aria-label="Actions to register or scale your association in Dubai">
+
+                <article class="dac-card dac-zoom-in dac-card-first-img">
+                    <div class="dac-card-content">
+                        <h3>
+                            <a href="#" class="dac-text-decoration-none dac-text-white"
+                                aria-label="Register your association in Dubai, open link">
+                                Register Your Association In Dubai
+                            </a>
+                        </h3>
+                        <span class="dac-arrow-icon" aria-hidden="true">
+                            <img src="./assets/card-arrow.svg" role="presentation" alt="" />
+                        </span>
+                    </div>
+                </article>
+
+                <article class="dac-card dac-image-card dac-zoom-in dac-card-second-img"
+                    aria-label="Scale your association to Dubai, card with background image of Dubai skyline">
+                    <div class="dac-card-content">
+                        <h3>
+                            <a href="#" class="dac-text-decoration-none dac-text-white"
+                                aria-label="Scale your association to Dubai, open link">
+                                Scale Your Association To Dubai
+                            </a>
+                        </h3>
+                        <span class="dac-arrow-icon" aria-hidden="true">
+                            <img src="./assets/card-arrow.svg" role="presentation" alt="" />
+                        </span>
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="dac-section d-flex dac-gap-24 dac-mt-80 dac-flex-wrap"
+                aria-labelledby="why-associations-heading">
+                <h2 class="dac-flex-one dac-hero-text-heading" id="why-associations-heading">
+                    Why associations choose Dubai
+                </h2>
+                <div class="dac-flex-one">
+                    <p class="dac-hero-text-paragraph"
+                        aria-label="Dubai Association Centre provides a formal framework for professional associations to establish a presence in Dubai.">
+                        Dubai Association Centre (DAC) provides a formal framework for professional associations to
+                        establish a
+                        presence in Dubai. Facilitating licensing and operational support, DAC is jointly established by
+                        Dubai
+                        Chambers, Dubai Department of Economy and Tourism, and Dubai World Trade Centre.
+                    </p>
+                </div>
+            </section>
+
+            <section class="dac-section dac-container dac-mt-80" aria-label="Key benefits of establishing in Dubai">
+
+                <article class="dac-professional-card  dac-gap-16 " aria-labelledby="card-title-1">
+                    <div class="dac-rounded-16 dac-height-289 dac-overflow-hidden">
+                        <img class="dac-parralex-effect" src="./assets/dubai-skyline.png"
+                            alt="Dubai skyline representing strategic global access">
+                    </div>
+                    <div class="dac-professional-card-content d-flex flex-column dac-gap-16">
+                        <h3 id="card-title-1" class="dac-m-0">Strategic Global Access</h3>
+                        <p class="dac-m-0 dac-hero-text-paragraph">
+                            Dubai's central location connects East and West, offering global reach.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="dac-professional-card  dac-gap-16 " aria-labelledby="card-title-2">
+                    <div class="dac-rounded-16 dac-height-289 dac-overflow-hidden">
+                        <img class="dac-parralex-effect" src="./assets/professional-ecosystem.png"
+                            alt="Illustration of Dubai's professional ecosystem">
+                    </div>
+                    <div class="dac-professional-card-content d-flex flex-column dac-gap-16">
+                        <h3 id="card-title-2" class="dac-m-0">Professional Ecosystem</h3>
+                        <p class="dac-m-0 dac-hero-text-paragraph">
+                            Access to Dubai's robust professional and trade community.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="dac-professional-card  dac-gap-16 " aria-labelledby="card-title-3">
+                    <div class="dac-rounded-16 dac-height-289 dac-overflow-hidden">
+                        <img class="dac-parralex-effect" src="./assets/modern-infrastructure.png"
+                            alt="Modern infrastructure facilities in Dubai">
+                    </div>
+                    <div class="dac-professional-card-content d-flex flex-column dac-gap-16">
+                        <h3 id="card-title-3" class="dac-m-0">Modern Infrastructure</h3>
+                        <p class="dac-m-0 dac-hero-text-paragraph">
+                            World-class venues and facilities for meetings, events, and networking.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="dac-professional-card  dac-gap-16 " aria-labelledby="card-title-4">
+                    <div class="dac-rounded-16 dac-height-289 dac-overflow-hidden">
+                        <img class="dac-parralex-effect" src="./assets/simplified-licensing.png"
+                            alt="Simplified licensing illustration">
+                    </div>
+                    <div class="dac-professional-card-content d-flex flex-column dac-gap-16">
+                        <h3 id="card-title-4" class="dac-m-0">Simplified Licensing</h3>
+                        <p class="dac-m-0 dac-hero-text-paragraph">
+                            One-stop support for association setup, licensing, and compliance.
+                        </p>
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="dac-section dac-eligibilitySection dac-mt-80" aria-label="Membership registration process">
+
+                <div class="d-flex dac-gap-24 dac-mobile-flex-wrap">
+
+                    <ol class="dac-steps dac-m-0" aria-label="Steps to become a member">
+                        <li class="dac-step">
+                            <div class="dac-step_number" aria-hidden="true">1</div>
+                            <p class="dac-m-0 dac-step_text">Check Eligibility</p>
+                        </li>
+                        <div class="dac-step-spacer"></div>
+                        <li class="dac-step">
+                            <div class="dac-step_number" aria-hidden="true">2</div>
+                            <p class="dac-m-0 dac-step_text">Submit documents to DAC for review</p>
+                        </li>
+                        <div class="dac-step-spacer"></div>
+                        <li class="dac-step">
+                            <div class="dac-step_number" aria-hidden="true">3</div>
+                            <p class="dac-m-0 dac-step_text">Join a thriving community</p>
+                        </li>
+                    </ol>
+
+                    <div class="dac-eligibility_overlay dac-zoom-in ">
+                        <h2 class="dac-m-0">Get Started</h2>
+                        <button class="dac-btn dac-outline" aria-label="Become a member at Dubai Association Centre">
+                            Become a Member
+                        </button>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="dac-section dac-events dac-mt-120 dac-mobile-flex-wrap dac-mh-540"
+                aria-label="Upcoming events and conferences">
+
+                <div class="dac-events__left dac-flex-one">
+                    <h2 class="dac-events__title dac-hero-text-heading dac-text-end">
+                        Fostering <br>
+                        professional <br>
+                        exchange and <br>
+                        organizational <br>
+                        growth.
+                    </h2>
+                </div>
+
+                <div class="dac-events__center dac-transition-Y dac-flex-one">
+                    <article id="card1" class="dac-events_card dac-card--stacked dac-active"
+                        aria-labelledby="event-title-2025">
+                        <h3 id="event-title-2025" class="dac-card__title dac-text-heading-md dac-m-0">
+                            Dubai Association Conference 2025
+                        </h3>
+                        <img src="./assets/card-event-img.png"
+                            alt="Attendees networking at Dubai Association Conference 2025" class="dac-card__image" />
+                        <p class="dac-m-0 dac-card__date" aria-label="Event Date: July 2025">JULY 2025</p>
+                        <p class="dac-m-0 dac-card__description">
+                            A premier gathering highlighting the pivotal role of associations in
+                            driving change and innovation.
+                        </p>
+                        <a href="#" class="dac-card__link"
+                            aria-label="Learn more about Dubai Association Conference 2025">
+                            <span class="dac-card__icon" aria-hidden="true">
+                                <img src="./assets/card-arrow.svg" role="presentation" alt="" />
+                            </span>
+                        </a>
+                    </article>
+
+                    <article id="card2" class="dac-events_card dac-card--stacked" aria-labelledby="event-title-2026">
+                        <h3 id="event-title-2026" class="dac-card__title dac-text-heading-md dac-m-0">
+                            Announcing next Dubai Conference
+                        </h3>
+                        <img src="./assets/dubai-skyline.png"
+                            alt="Attendees networking at Dubai Association Conference 2026" class="dac-card__image" />
+                        <p class="dac-m-0 dac-card__date" aria-label="Event Date: July 2026">DEC 2026</p>
+                        <p class="dac-m-0 dac-card__description">
+                            Another major gathering showcasing the future of associations and innovation.
+                        </p>
+                        <a href="#" class="dac-card__link"
+                            aria-label="Learn more about Dubai Association Conference 2026">
+                            <span class="dac-card__icon" aria-hidden="true">
+                                <img src="./assets/card-arrow.svg" role="presentation" alt="" />
+                            </span>
+                        </a>
+                    </article>
+                </div>
+
+                <div class="dac-events__right dac-flex-one">
+                    <p class="dac-m-0 dac-events__description">
+                        As a DAC member, your association gains exclusive access to networking events,
+                        workshops, and industry forums. Engage with other associations, share knowledge,
+                        and explore new collaboration opportunities that help drive your mission forward.
+                    </p>
+                    <a href="#" class="dac-btn dac-outline"
+                        aria-label="View all upcoming events at Dubai Association Centre">
+                        View All Events
+                    </a>
+                </div>
+
+            </section>
+
+            <footer class="dac-footer dac-mt-80" role="contentinfo" aria-label="Dubai Association Centre footer">
+                <img src="./assets/footer-logo-bg.png" alt="Dubai Association Centre Logo" />
+                <div class="dac-footer__logo-info" aria-label="Footer logo and contact information">
+                    <div class="dac-footer__info">
+                        <p class="dac-cursor-pointer dac-m-0 dac-text-paragraph-sm dac-color-off-white">Dubai
+                            Association
+                            Centre</p>
+                        <p class="dac-cursor-pointer dac-m-0 dac-text-paragraph-sm dac-color-off-white">Sheikh Zayed
+                            Road,
+                            Dubai</p>
+                        <p class="dac-cursor-pointer dac-m-0 dac-text-paragraph-sm dac-color-off-white">
+                            Info@dubaichamberinternational.com
+                        </p>
+                        <p class="dac-cursor-pointer dac-m-0 dac-text-paragraph-sm dac-color-off-white">+971-XXX-XXXX
+                        </p>
+                    </div>
+                </div>
+                <nav class="dac-footer__links" aria-label="Footer navigation">
+                    <ul class="dac-m-0 dac-p-0 d-flex flex-column dac-gap-4">
+                        <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
+                                class="dac-text-decoration-none dac-color-black" href="./about.html"
+                                referrerpolicy="no-referrer">About DAC</a></li>
+                        <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
+                                class="dac-text-decoration-none dac-color-black" href="./becomeMember.html"
+                                referrerpolicy="no-referrer"> Become A Member </a> </li>
+                        <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
+                                class="dac-text-decoration-none dac-color-black" href="./licenseRenewal.html"
+                                referrerpolicy="no-referrer"> Licensing Renewal</a> </li>
+                        <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
+                                class="dac-text-decoration-none dac-color-black" href="./events.html"
+                                referrerpolicy="no-referrer">Events </a> </li>
+                        <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
+                                class="dac-text-decoration-none dac-color-black" href="./dacConferences.html"
+                                referrerpolicy="no-referrer"> Conferences</a> </li>
+                        <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
+                                class="dac-text-decoration-none dac-color-black" href="./contactUs.html"
+                                referrerpolicy="no-referrer"> Get In Touch</a> </li>
+                        <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
+                                class="dac-text-decoration-none dac-color-black" href="./faq.html"
+                                referrerpolicy="no-referrer">
+                                Frequently Asked Questions </a> </li>
+                    </ul>
+                </nav>
+                <nav class="dac-footer__links" aria-label="Legal links">
+                    <ul class="dac-m-0 dac-p-0 d-flex flex-column dac-gap-4">
+                        <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
+                                class="dac-text-decoration-none dac-color-black" href="#" referrerpolicy="no-referrer">
+                                Terms &
+                                Conditions </a> </li>
+                        <li class="dac-m-0 dac-list-style-none dac-cursor-pointer dac-m-0 dac-text-paragraph-sm"> <a
+                                class="dac-text-decoration-none dac-color-black" href="#" referrerpolicy="no-referrer">
+                                Privacy
+                                Policy </a> </li>
+                    </ul>
+                </nav>
+
+                <div class="dac-footer__social" aria-label="Follow us on social media">
+                    <a href="#" aria-label="LinkedIn">
+                        <img src="./assets/linkedin.svg" role="presentation" alt="LinkedIn icon" />
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <img src="./assets/facebook.svg" role="presentation" alt="Facebook icon" />
+                    </a>
+                    <a href="#" aria-label="Twitter/X">
+                        <img src="./assets/twitter.svg" role="presentation" alt="Twitter icon" />
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <img src="./assets/youtube.svg" role="presentation" alt="YouTube icon" />
+                    </a>
+                </div>
+            </footer>
+
+        </main>
+    </section>
 
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
