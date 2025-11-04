@@ -15,6 +15,7 @@
   --color-secondary-light: #ccd6dc;
   --Foundation-Neurtal: #545454;
   --Charcoal: #4e4e4e;
+  --Light-Ash: #f6f6f6;
   --Foundation-Neurtals-neurtals-400: #333;
 }
 
@@ -39,6 +40,9 @@
   /* min-height: 100vh; */
 }
 
+.dac-bg-light-ash {
+  background-color: var(--Light-Ash) !important;
+}
 .dac-color-white {
   color: var(--color-btn-text) !important;
 }
@@ -120,6 +124,30 @@
 }
 .dac-gap-64 {
   gap: 64px;
+}
+
+.dac-border-radius-16 {
+  border-radius: 16px;
+}
+
+.dac-bw-1 {
+  border-width: 1px;
+}
+
+.dac-border-style-solid {
+  border-style: solid;
+}
+
+.dac-border-24 {
+  border-radius: 24px;
+}
+
+.dac-border-180 {
+  border-radius: 180px;
+}
+
+.dac-border-color-sky-blue {
+  border-color: var(--color-sky-blue);
 }
 
 .dac-p-8 {
@@ -223,11 +251,17 @@
 .dac-fs-32 {
   font-size: 32px;
 }
+.dac-fs-36 {
+  font-size: 36px;
+}
 .dac-fs-24 {
   font-size: 24px !important;
 }
 .dac-fs-20 {
   font-size: 20px;
+}
+.dac-fs-22 {
+  font-size: 22px;
 }
 .dac-fs-16 {
   font-size: 16px;
@@ -271,9 +305,14 @@
 .dac-w-60 {
   width: 60%;
 }
+
 .dac-w-180 {
   width: 180px !important;
 }
+.dac-w-140 {
+  width: 140px !important;
+}
+
 .dac-w-max-content {
   width: max-content;
 }
@@ -298,12 +337,22 @@
 .dac-h-80 {
   height: 80px;
 }
+
+.dac-h-125 {
+  height: 125px;
+}
+
 .dac-h-160 {
   height: 160px;
 }
+
 .dac-h-370 {
   height: 370px;
 }
+.dac-mh-370 {
+  min-height: 370px;
+}
+
 .dac-h-470 {
   height: 470px;
 }
@@ -325,6 +374,14 @@
 .dac-max-height-360 {
   max-height: 360px;
 }
+.dac-height-48 {
+  min-height: 48px;
+}
+.dac-min-height-208 {
+  min-height: 208px;
+  height: auto;
+}
+
 .dac-mw-460 {
   max-width: 460px;
   min-width: 460px;
@@ -332,8 +389,15 @@
 .dac-mw-213 {
   min-width: 213px;
 }
+.dac-mw-282 {
+  min-width: 282px;
+  width: 100%;
+}
 .dac-w-760 {
   width: 760px;
+}
+.dac-w-48 {
+  min-width: 48px;
 }
 
 .dac-no-scroll {
@@ -725,7 +789,8 @@ a {
       rgba(4, 46, 111, 0) 0%,
       rgba(4, 46, 111, 0.35) 100%
     ),
-    url(../assets/second-card-img.png) lightgray 0px -21.357px / 100% 164.465% no-repeat;
+    url(../assets/scale-your-association.png) lightgray 0px -21.357px / 100% 164.465%
+      no-repeat;
 }
 .dac-card-second-img:hover {
   background-image: linear-gradient(
@@ -820,6 +885,7 @@ a {
   display: flex;
   align-items: center;
   gap: 24px;
+  margin: 1rem 0px;
 }
 .dac-step-spacer {
   height: 1px;
@@ -872,13 +938,15 @@ a {
   flex: 1 0 0;
   align-self: stretch;
   border-radius: 16px;
-  background: linear-gradient(
+  background: url(../assets/dubai-building.png);
+  /* background: linear-gradient(
       144deg,
       rgba(0, 0, 0, 0.8) 14.11%,
       rgba(0, 0, 0, 0) 78.13%
     ),
-    url(../assets/eligibility.png) lightgray 50% / cover no-repeat;
+    url(../assets/dubai-building.png) lightgray 50% / cover no-repeat; */
   background-attachment: fixed;
+  background-size: cover;
 }
 .dac-eligibility_overlay h2 {
   color: var(--Foundation-Neurtals-neurtals-50, #fff);
@@ -977,7 +1045,8 @@ a {
 }
 .dac-card__date {
   font-size: 0.8rem;
-  font-weight: bold;
+  font-weight: 400;
+  /* font-weight: bold; */
   opacity: 0.8;
 }
 .dac-card__description {
@@ -1125,6 +1194,9 @@ a {
 .dac-bg-img-license {
   background-image: url(../assets/Video.png);
 }
+.dac-bg-img-contact {
+  background-image: url(../assets/contact-bg.png);
+}
 .dac-bg-img-event-details {
   background-image: url(../assets/event-H.E.MattarAlTayer.png);
 }
@@ -1136,7 +1208,7 @@ a {
 }
 
 .dac-video-container-about {
-  background-image: url(../assets/about-image.png);
+  background-image: url(../assets/about-bg.png);
 }
 .dac-play-button {
   position: absolute;
@@ -1283,8 +1355,8 @@ details p {
   left: 16px;
   color: #fff;
   padding: 10px 12px;
-  border-radius: 30px;
-  background: #bb0609;
+  border-radius: 8px;
+  background: #013453;
   line-height: 11px;
 }
 .dac-card-overlay {
@@ -1389,6 +1461,8 @@ details p {
   background-color: white;
   overflow: hidden;
   box-shadow: 0 9px 10.5px 0 rgba(0, 0, 0, 0.08);
+  width: 60%;
+  justify-content: space-between;
 }
 
 .toggle-button {
@@ -1614,6 +1688,10 @@ details p {
   }
   .dac-events {
     /* justify-content: center; */
+  }
+
+  .toggle-switch {
+    width: 100%;
   }
   .dac-events__left {
     width: 100%;

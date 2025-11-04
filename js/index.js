@@ -44,6 +44,34 @@ const owlConfig_two_and_half_box = {
     items: 2.5,
   },
 };
+const owlConfig_three_and_half_box = {
+  0: {
+    items: 1.1,
+  },
+  576: {
+    items: 1.2,
+  },
+  768: {
+    items: 2.5,
+  },
+  992: {
+    items: 3.5,
+  },
+};
+const owlConfig_two_box = {
+  0: {
+    items: 1.1,
+  },
+  576: {
+    items: 1.2,
+  },
+  768: {
+    items: 2,
+  },
+  992: {
+    items: 2,
+  },
+};
 
 let activeIndex = 0;
 let ticking = false;
@@ -70,6 +98,9 @@ document.addEventListener("DOMContentLoaded", () => {
   handleOWLcarous("#carousel-container", owlCarouselConfig_one_and_Half_Box);
   handleOWLcarous("#owl-carousel-one", owlConfig_two_and_half_box);
   handleOWLcarous("#owl-carousel-two", owlConfig_two_and_half_box);
+  handleOWLcarous("#owl-carousel-three", owlConfig_three_and_half_box);
+  handleOWLcarous("#owl-carousel-four", owlConfig_three_and_half_box);
+  handleOWLcarous("#owl-carousel-full-two", owlConfig_two_box);
   //sticky header functionality
 
   window.addEventListener("scroll", () => {
@@ -301,6 +332,9 @@ const resetOWL = () => {
   handleOWLcarous("#carousel-container", owlCarouselConfig_one_and_Half_Box);
   handleOWLcarous("#owl-carousel-one", owlConfig_two_and_half_box);
   handleOWLcarous("#owl-carousel-two", owlConfig_two_and_half_box);
+  handleOWLcarous("#owl-carousel-three", owlConfig_three_and_half_box);
+  handleOWLcarous("#owl-carousel-four", owlConfig_three_and_half_box);
+  handleOWLcarous("#owl-carousel-full-two", owlConfig_two_box);
 };
 
 const timer = setInterval(countdown, 1000);
