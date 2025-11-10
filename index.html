@@ -327,81 +327,66 @@
                         growth.
                     </h2>
 
-
-                    <div class="owl-custom-nav  d-flex justify-content-end dac-mt-24 dac-gap-24" aria-hidden="false">
-
-                        <button class="owl-nav-btn owl-prev dac-owl-carousel" aria-label="Previous slide" type="button" >
+                    <div class="d-flex justify-content-end dac-gap-24 dac-mt-24 ">
+                        <button class="dac-owl-carousel-btn" id="dac-stack-card-prev">
                             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15"
                                 fill="none">
                                 <path
                                     d="M0.292892 6.65691C-0.0976315 7.04743 -0.0976315 7.6806 0.292892 8.07112L6.65685 14.4351C7.04738 14.8256 7.68054 14.8256 8.07107 14.4351C8.46159 14.0446 8.46159 13.4114 8.07107 13.0209L2.41421 7.36401L8.07107 1.70716C8.46159 1.31664 8.46159 0.68347 8.07107 0.292946C7.68054 -0.0975785 7.04738 -0.0975785 6.65685 0.292946L0.292892 6.65691ZM17 7.36401V6.36401L1 6.36401V7.36401V8.36401L17 8.36401V7.36401Z"
                                     fill="#013453" />
                             </svg>
-
                         </button>
-
-                        <button class="owl-nav-btn owl-next dac-owl-carousel" aria-label="Next slide" type="button">
-                      
+                        <button class="dac-owl-carousel-btn" id="dac-stack-card-next">
                             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15"
                                 fill="none">
                                 <path
                                     d="M16.7071 8.07112C17.0976 7.6806 17.0976 7.04743 16.7071 6.65691L10.3431 0.292946C9.95262 -0.0975785 9.31946 -0.0975785 8.92893 0.292946C8.53841 0.68347 8.53841 1.31664 8.92893 1.70716L14.5858 7.36401L8.92893 13.0209C8.53841 13.4114 8.53841 14.0446 8.92893 14.4351C9.31946 14.8256 9.95262 14.8256 10.3431 14.4351L16.7071 8.07112ZM0 7.36401L0 8.36401H16V7.36401V6.36401H0L0 7.36401Z"
                                     fill="#013453" />
                             </svg>
+
                         </button>
 
                     </div>
                 </div>
 
-                <div class="owl-container dac-flex-one dac-owl-containr-card" aria-label="Objective 3" >
+                <div class="dac-events__center dac-transition-Y dac-flex-one">
+                    <article id="card1" class="dac-events_card dac-card--stacked dac-active"
+                        aria-labelledby="event-title-2025">
+                        <h3 id="event-title-2025" class="dac-card__title dac-text-heading-md dac-m-0">
+                            Dubai Association Conference 2025
+                        </h3>
+                        <img src="./assets/card-event-img.png"
+                            alt="Attendees networking at Dubai Association Conference 2025" class="dac-card__image" />
+                        <p class="dac-m-0 dac-card__date" aria-label="Event Date: July 2025">JULY 2025</p>
+                        <p class="dac-m-0 dac-card__description">
+                            A premier gathering highlighting the pivotal role of associations in
+                            driving change and innovation.
+                        </p>
+                        <a href="./eventDetails.html" class="dac-card__link"
+                            aria-label="Learn more about Dubai Association Conference 2025">
+                            <span class="dac-card__icon" aria-hidden="true">
+                                <img src="./assets/card-arrow.svg" role="presentation" alt="" />
+                            </span>
+                        </a>
+                    </article>
 
-                    <div class="owl-carousel owl-theme dac-events__center dac-transition-Y"
-                        id="owlCarouselConfig_One__Box">
-                        <!-- 
-                    <div class="dac-events__center dac-transition-Y dac-flex-one owl-carousel owl-theme"
-                        id="owlCarouselConfig_One__Box"> -->
-
-                        <article id="card1" class="dac-events_card dac-card--stacked dac-active"
-                            aria-labelledby="event-title-2025">
-                            <h3 id="event-title-2025" class="dac-card__title dac-text-heading-md dac-m-0">
-                                Dubai Association Conference 2025
-                            </h3>
-                            <img src="./assets/card-event-img.png"
-                                alt="Attendees networking at Dubai Association Conference 2025"
-                                class="dac-card__image" />
-                            <p class="dac-m-0 dac-card__date" aria-label="Event Date: July 2025">JULY 2025</p>
-                            <p class="dac-m-0 dac-card__description">
-                                A premier gathering highlighting the pivotal role of associations in
-                                driving change and innovation.
-                            </p>
-                            <a href="#" class="dac-card__link"
-                                aria-label="Learn more about Dubai Association Conference 2025">
-                                <span class="dac-card__icon" aria-hidden="true">
-                                    <img src="./assets/card-arrow.svg" role="presentation" alt="" />
-                                </span>
-                            </a>
-                        </article>
-
-                        <article id="card2" class="dac-events_card dac-card--stacked"
-                            aria-labelledby="event-title-2026">
-                            <h3 id="event-title-2026" class="dac-card__title dac-text-heading-md dac-m-0">
-                                Announcing next Dubai Conference
-                            </h3>
-                            <img src="./assets/dubai-skyline.png"
-                                alt="Attendees networking at Dubai Association Conference 2026"
-                                class="dac-card__image" />
-                            <p class="dac-m-0 dac-card__date" aria-label="Event Date: July 2026">DEC 2026</p>
-                            <p class="dac-m-0 dac-card__description">
-                                Another major gathering showcasing the future of associations and innovation.
-                            </p>
-                            <a href="#" class="dac-card__link"
-                                aria-label="Learn more about Dubai Association Conference 2026">
-                                <span class="dac-card__icon" aria-hidden="true">
-                                    <img src="./assets/card-arrow.svg" role="presentation" alt="" />
-                                </span>
-                            </a>
-                        </article>
-                    </div>
+                    <article id="card2" class="dac-events_card dac-card--stacked" aria-labelledby="event-title-2026">
+                        <h3 id="event-title-2026" class="dac-card__title dac-text-heading-md dac-m-0">
+                            Announcing next Dubai Conference
+                        </h3>
+                        <img src="./assets/dubai-skyline.png"
+                            alt="Attendees networking at Dubai Association Conference 2026" class="dac-card__image" />
+                        <p class="dac-m-0 dac-card__date" aria-label="Event Date: July 2026">DEC 2026</p>
+                        <p class="dac-m-0 dac-card__description">
+                            Another major gathering showcasing the future of associations and innovation.
+                        </p>
+                        <a href="./eventDetails.html" class="dac-card__link"
+                            aria-label="Learn more about Dubai Association Conference 2026">
+                            <span class="dac-card__icon" aria-hidden="true">
+                                <img src="./assets/card-arrow.svg" role="presentation" alt="" />
+                            </span>
+                        </a>
+                    </article>
                 </div>
 
                 <div class="dac-events__right dac-flex-one">
@@ -418,7 +403,6 @@
 
             </section>
 
-
             <footer class="dac-footer dac-mt-80" role="contentinfo" aria-label="Dubai Association Centre footer">
                 <img src="./assets/footer-logo-bg.png" alt="Dubai Association Centre Logo" />
                 <div class="dac-footer__logo-info" aria-label="Footer logo and contact information">
@@ -432,8 +416,7 @@
                         <p class="dac-cursor-pointer dac-m-0 dac-text-paragraph-sm dac-color-off-white">
                             Info@dubaichamberinternational.com
                         </p>
-                        <p class="dac-cursor-pointer dac-m-0 dac-text-paragraph-sm dac-color-off-white">
-                            +971-XXX-XXXX
+                        <p class="dac-cursor-pointer dac-m-0 dac-text-paragraph-sm dac-color-off-white">+971-XXX-XXXX
                         </p>
                     </div>
                 </div>
