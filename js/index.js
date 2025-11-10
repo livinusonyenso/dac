@@ -1,3 +1,25 @@
+const owlCarouselConfig_One__Box = {
+  0: {
+    items: 1,
+    center: true,
+    stagePadding: 0,
+  },
+  576: {
+    items: 1,
+    center: true,
+    stagePadding: 0,
+  },
+  768: {
+    items: 1,
+    center: true,
+    stagePadding: 0,
+  },
+  992: {
+    items: 1,
+    center: true,
+    stagePadding: 0,
+  },
+};
 const owlCarouselConfig_one_and_Half_Box = {
   0: {
     items: 1,
@@ -96,6 +118,7 @@ const sections = document.querySelectorAll(".event-section");
 document.addEventListener("DOMContentLoaded", () => {
   //   Initialize Owl Carousel
   handleOWLcarous("#carousel-container", owlCarouselConfig_one_and_Half_Box);
+  handleOWLcarous("#owlCarouselConfig_One__Box", owlCarouselConfig_One__Box);
   handleOWLcarous("#owl-carousel-one", owlConfig_two_and_half_box);
   handleOWLcarous("#owl-carousel-two", owlConfig_two_and_half_box);
   handleOWLcarous("#owl-carousel-three", owlConfig_three_and_half_box);
@@ -169,22 +192,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Card carousel functionality
 
-  document.querySelectorAll(".dac-card__link").forEach((link) => {
-    link.addEventListener("click", (e) => {
-      console.log(link);
-      e.preventDefault();
-      // Remove active class from current card
-      cards[activeIndex].classList.remove("dac-active");
-      cards[activeIndex].classList.add("dac-behind");
+  // document.querySelectorAll(".dac-card__link").forEach((link) => {
+  //   link.addEventListener("click", (e) => {
+  //     console.log(link);
+  //     e.preventDefault();
+  //     // Remove active class from current card
+  //     cards[activeIndex].classList.remove("dac-active");
+  //     cards[activeIndex].classList.add("dac-behind");
 
-      // Move to next card
-      activeIndex = (activeIndex + 1) % cards.length;
+  //     // Move to next card
+  //     activeIndex = (activeIndex + 1) % cards.length;
 
-      // Show next card
-      cards[activeIndex].classList.add("dac-active");
-      cards[activeIndex].classList.remove("dac-behind");
-    });
-  });
+  //     // Show next card
+  //     cards[activeIndex].classList.add("dac-active");
+  //     cards[activeIndex].classList.remove("dac-behind");
+  //   });
+  // });
 
   // Video play button functionality
   const video = document.getElementById("myVideo");
@@ -287,6 +310,88 @@ function handleOWLcarous(className, responsive) {
   }
 }
 
+function handleOWLcarous(className, responsive) {
+  let isRTL = $("html").attr("lang") === "ar";
+
+  // Destroy existing carousel before reinitializing
+  let carousel = $(className);
+  if (carousel.hasClass("owl-loaded")) {
+    carousel.trigger("destroy.owl.carousel").removeClass("owl-loaded");
+    // unwrap stage if needed
+    if (carousel.parent().hasClass("owl-stage-outer")) {
+      carousel.parent().find(".owl-stage-outer").children().unwrap();
+    }
+  }
+
+  let checkIfClassNameExists = $(className).length > 0;
+
+  if (checkIfClassNameExists) {
+    $(className).owlCarousel({
+      loop: true,
+      responsiveClass: true,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      margin: 24,
+      responsive: responsive,
+      rtl: isRTL,
+      autoplayTimeout: 3000,
+      autoplaySpeed: 1000,
+      autoplayHoverPause: true,
+      // recommended for mouse/touch drag
+      mouseDrag: true,
+      touchDrag: true,
+      pullDrag: true,
+    });
+
+    // ==== CUSTOM NAV HOOKUP ====
+    // use the container to find buttons we added in DOM
+    const $container = $(".dac-events__left");
+
+    // Prev / Next buttons
+    $container
+      .find(".owl-prev")
+      .off("click")
+      .on("click", function (e) {
+        e.preventDefault();
+        $(className).trigger("prev.owl.carousel", [300]); // 300ms speed
+      });
+
+    $container
+      .find(".owl-next")
+      .off("click")
+      .on("click", function (e) {
+        e.preventDefault();
+        $(className).trigger("next.owl.carousel", [300]);
+      });
+
+    // OPTIONAL: if you want the card's internal arrow link to advance slides
+    // your card mark-up has <a class="dac-card__link" href="#">
+    // we intercept that click and slide to next instead of navigating.
+    $(className)
+      .find(".dac-card__link")
+      .off("click")
+      .on("click", function (e) {
+        e.preventDefault(); // important so the page doesn't jump
+        // if you want to open the event detail instead, remove this preventDefault.
+        $(className).trigger("next.owl.carousel", [400]);
+      });
+
+    // keyboard accessibility: left/right keys when focus is inside container
+    $container.off("keydown.owlNav").on("keydown.owlNav", function (e) {
+      if (e.key === "ArrowLeft") {
+        $(className).trigger("prev.owl.carousel");
+      } else if (e.key === "ArrowRight") {
+        $(className).trigger("next.owl.carousel");
+      }
+    });
+
+    // ensure container is focusable to receive arrow keys
+    $container.attr("tabindex", "0");
+  }
+}
+
 const countdown = () => {
   const targetDate = new Date("2025-12-19T00:00:00Z"); // SET FUTURE DATE HERE
   const now = new Date();
@@ -330,6 +435,7 @@ const countdown = () => {
 
 const resetOWL = () => {
   handleOWLcarous("#carousel-container", owlCarouselConfig_one_and_Half_Box);
+  handleOWLcarous("#owlCarouselConfig_One__Box", owlCarouselConfig_One__Box);
   handleOWLcarous("#owl-carousel-one", owlConfig_two_and_half_box);
   handleOWLcarous("#owl-carousel-two", owlConfig_two_and_half_box);
   handleOWLcarous("#owl-carousel-three", owlConfig_three_and_half_box);
